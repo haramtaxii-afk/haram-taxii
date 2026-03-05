@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ─────────────────────────────────────────────────────────
+     * Haram Taxi Service — Color System (60-30-10 Rule)
+     *
+     * 60% Dominant : White / Light Gray  (backgrounds, cards)
+     * 30% Secondary: Teal #0f766e        (nav, sections, borders)
+     * 10% Accent   : Amber #d97706       (CTAs, stars, badges)
+     * ───────────────────────────────────────────────────────── */
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* PRIMARY — Teal 700 (#0f766e) — Trust + Calm */
+    --primary: 175 77% 26%;
+    --primary-foreground: 0 0% 100%;
+
+    /* SECONDARY — Teal 100 (#ccfbf1) — Soft teal for backgrounds/chips */
+    --secondary: 166 76% 91%;
+    --secondary-foreground: 175 77% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* ACCENT — Amber 600 (#d97706) — 10% warmth, premium, CTA highlight */
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+    --ring: 175 77% 26%;
+
+    --radius: 0.5rem;
+
+    /* ── Brand Tokens (use these for consistency) ── */
+    --brand-teal: 175 77% 26%;
+    /* #0f766e — primary */
+    --brand-teal-light: 175 60% 40%;
+    /* #2a9d8f — hover states */
+    --brand-teal-pale: 166 76% 91%;
+    /* #ccfbf1 — backgrounds */
+    --brand-teal-dark: 175 77% 15%;
+    /* Darker teal for gradients */
+    --brand-amber: 38 92% 50%;
+    /* #d97706 — accent */
+    --brand-amber-light: 43 96% 56%;
+    /* #fbbf24 — stars, highlights */
+    --brand-amber-pale: 48 96% 89%;
+    /* #fef3c7 — badge backgrounds */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 175 77% 26%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 175 77% 26%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    line-height: 1.1;
+  }
+
+  .text-fluid-h2 {
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    line-height: 1.2;
+  }
+
+  /* Custom pattern for backgrounds */
+  .pattern-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Animations */
+@layer utilities {
+  .animate-in {
+    animation-name: fade-in-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  /* Keyframes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.95);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes zoom-out {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(0.95);
+    }
+  }
+
+  @keyframes slide-in-from-top-2 {
+    from {
+      transform: translateY(-0.5rem);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-from-bottom {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes ken-burns {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
