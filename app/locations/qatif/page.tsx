@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/qatif',
+        canonical: 'https://www.haramtaxii.com/locations/qatif',
     },
     title: 'Taxi Service in Qatif | Eastern Province Taxi',
     description: 'Reliable taxi service in Qatif, Tarout, and Saihat. Transfers to Dammam Airport, Jubail, and Khobar. 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Qatif | Eastern Province',
         description: 'Professional transport in Qatif. Safe rides to Dammam, Jubail, and King Fahd Airport.',
-        url: 'http://www.haramtaxii.com/locations/qatif',
+        url: 'https://www.haramtaxii.com/locations/qatif',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function QatifLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Qatif",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function QatifLocationPage() {
             "postalCode": "31911",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/qatif",
+        "url": "https://www.haramtaxii.com/locations/qatif",
         "priceRange": "$$"
     };
 

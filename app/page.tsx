@@ -26,7 +26,7 @@ import FounderNote from '@/components/FounderNote';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'http://www.haramtaxii.com',
+    canonical: 'https://www.haramtaxii.com',
   },
 };
 
@@ -35,10 +35,10 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Haram Taxi Service - Premium Transportation",
-    "url": "http://www.haramtaxii.com",
+    "url": "https://www.haramtaxii.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "http://www.haramtaxii.com/search?q={search_term_string}",
+      "target": "https://www.haramtaxii.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

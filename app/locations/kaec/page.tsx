@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/kaec',
+        canonical: 'https://www.haramtaxii.com/locations/kaec',
     },
     title: 'Taxi Service in KAEC (Rabigh) | Economic City & Train',
     description: 'Premier taxi service in King Abdullah Economic City (KAEC) and Rabigh. Transfers to Haramain Train Station, KAEC Port, and resorts. JED airport rides.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in KAEC (Rabigh)',
         description: 'Reliable transport for KAEC, Rabigh, and the Industrial Valley. Connect to Haramain Station and Jeddah Airport.',
-        url: 'http://www.haramtaxii.com/locations/kaec',
+        url: 'https://www.haramtaxii.com/locations/kaec',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function KAECLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service KAEC",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function KAECLocationPage() {
             "postalCode": "23964",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/kaec",
+        "url": "https://www.haramtaxii.com/locations/kaec",
         "priceRange": "$$"
     };
 

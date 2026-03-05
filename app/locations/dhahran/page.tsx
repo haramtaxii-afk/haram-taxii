@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/dhahran',
+        canonical: 'https://www.haramtaxii.com/locations/dhahran',
     },
     title: 'Taxi Service in Dhahran | Aramco & Techno Valley',
     description: 'Executive taxi service in Dhahran. Serving Saudi Aramco Camp, KFUPM, and Techno Valley. Reliable airport transfers to Dammam Airport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Dhahran | Energy Capital',
         description: 'Professional transport in Dhahran. Safe rides for Aramco employees, KFUPM students, and business travelers.',
-        url: 'http://www.haramtaxii.com/locations/dhahran',
+        url: 'https://www.haramtaxii.com/locations/dhahran',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function DhahranLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Dhahran",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function DhahranLocationPage() {
             "postalCode": "31261",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/dhahran",
+        "url": "https://www.haramtaxii.com/locations/dhahran",
         "priceRange": "$$"
     };
 

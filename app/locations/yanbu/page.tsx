@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/yanbu',
+        canonical: 'https://www.haramtaxii.com/locations/yanbu',
     },
     title: 'Taxi Service in Yanbu | Industrial City & Airport Transfers',
     description: 'Professional taxi service in Yanbu. Reliable transfers to Prince Abdul Mohsin Airport (YNB), Royal Commission, and Yanbu Industrial City. 24/7.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Yanbu | Royal Commission & Airport',
         description: 'Trusted transport in Yanbu. Serving the Industrial City, Airport (YNB), and Historic Yanbu.',
-        url: 'http://www.haramtaxii.com/locations/yanbu',
+        url: 'https://www.haramtaxii.com/locations/yanbu',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function YanbuLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Yanbu",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function YanbuLocationPage() {
             "postalCode": "41912",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/yanbu",
+        "url": "https://www.haramtaxii.com/locations/yanbu",
         "priceRange": "$$"
     };
 

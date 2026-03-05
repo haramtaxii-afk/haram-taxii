@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/dawadmi',
+        canonical: 'https://www.haramtaxii.com/locations/dawadmi',
     },
     title: 'Taxi Service in Dawadmi | Central Saudi Transport',
     description: 'Premier taxi service in Dawadmi. Airport transfers (DWD), intercity rides to Riyadh and Taif, and local transport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Dawadmi | Heart of Najd',
         description: 'Reliable taxis in Dawadmi. Connecting King Salman Domestic Airport to the city and region.',
-        url: 'http://www.haramtaxii.com/locations/dawadmi',
+        url: 'https://www.haramtaxii.com/locations/dawadmi',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function DawadmiLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Dawadmi",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function DawadmiLocationPage() {
             "postalCode": "17461",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/dawadmi",
+        "url": "https://www.haramtaxii.com/locations/dawadmi",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-wadeeah',
+        canonical: 'https://www.haramtaxii.com/locations/al-wadeeah',
     },
     title: 'Taxi Service in Al Wadeeah | Yemen Border Crossing',
     description: 'Trusted taxi service in Al Wadeeah. Direct transfers to Yemen border and Sharurah. Safe, licensed, and 24/7 border rides.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Wadeeah | Yemen Gateway',
         description: 'Reliable border transport. Connecting Sharurah and Najran to the Al Wadeeah Land Port.',
-        url: 'http://www.haramtaxii.com/locations/al-wadeeah',
+        url: 'https://www.haramtaxii.com/locations/al-wadeeah',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlWadeeahLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Wadeeah",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlWadeeahLocationPage() {
             "postalCode": "68611",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-wadeeah",
+        "url": "https://www.haramtaxii.com/locations/al-wadeeah",
         "priceRange": "$$"
     };
 

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'GMC Yukon Luxury Taxi | Premium SUV Rental',
         description: 'Book GMC Yukon luxury SUV for VIP transport in Saudi Arabia.',
-        url: 'http://www.haramtaxii.com/fleet/gmc-yukon',
+        url: 'https://www.haramtaxii.com/fleet/gmc-yukon',
         type: 'website',
     },
 };

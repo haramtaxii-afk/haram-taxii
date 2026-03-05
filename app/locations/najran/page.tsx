@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/najran',
+        canonical: 'https://www.haramtaxii.com/locations/najran',
     },
     title: 'Taxi Service in Najran | Yemen Border & Heritage Tours',
     description: 'Premier taxi service in Najran. Airport transfers (EAM), Wuday\'ah Yemen Border crossing, and Al-Ukhdood heritage tours.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Najran | Yemen Border',
         description: 'Safe and reliable transfers in Najran. Connect to the Wuday\'ah border and Najran Airport (EAM).',
-        url: 'http://www.haramtaxii.com/locations/najran',
+        url: 'https://www.haramtaxii.com/locations/najran',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function NajranLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Najran",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function NajranLocationPage() {
             "postalCode": "66271",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/najran",
+        "url": "https://www.haramtaxii.com/locations/najran",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/haql',
+        canonical: 'https://www.haramtaxii.com/locations/haql',
     },
     title: 'Taxi Service in Haql | Red Sea Shipwreck & Jordan Border',
     description: 'Premier taxi service in Haql. Transfers to the Georgios G. shipwreck, Jordanian border, and Neom. Enjoy views of 3 countries.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Haql | Northern Gem',
         description: 'Reliable transport in Haql. Visit the famous shipwreck and the northern borders ease.',
-        url: 'http://www.haramtaxii.com/locations/haql',
+        url: 'https://www.haramtaxii.com/locations/haql',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function HaqlLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Haql",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function HaqlLocationPage() {
             "postalCode": "49938",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/haql",
+        "url": "https://www.haramtaxii.com/locations/haql",
         "priceRange": "$$"
     };
 

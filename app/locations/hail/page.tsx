@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/hail',
+        canonical: 'https://www.haramtaxii.com/locations/hail',
     },
     title: 'Taxi Service in Hail | Jubbah Rock Art & Airport Transfers',
     description: 'Premier taxi service in Hail. Transfers to Hail Airport (HAS), Jubbah (UNESCO Rock Art), and Al Nafud Desert. Reliable local drivers.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Hail | UNESCO Sites & Airport',
         description: 'Explore Hail with a private driver. Airport transfers (HAS) and tours to Jubbah and Nafud.',
-        url: 'http://www.haramtaxii.com/locations/hail',
+        url: 'https://www.haramtaxii.com/locations/hail',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function HailLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Hail",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function HailLocationPage() {
             "postalCode": "55421",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/hail",
+        "url": "https://www.haramtaxii.com/locations/hail",
         "priceRange": "$$"
     };
 

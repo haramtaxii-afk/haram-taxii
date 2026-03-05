@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/qurayyat',
+        canonical: 'https://www.haramtaxii.com/locations/qurayyat',
     },
     title: 'Taxi Service in Qurayyat | Jordan Border Transfer',
     description: 'Trusted taxi in Al Qurayyat. Direct transfers to Al Haditha Border (Jordan), Gurayat Domestic Airport (URY), and Al Jouf. 24/7 border crossing service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Qurayyat | Jordan Border',
         description: 'Professional transport to Al Haditha Border (Jordan) and Qurayyat Airport (URY).',
-        url: 'http://www.haramtaxii.com/locations/qurayyat',
+        url: 'https://www.haramtaxii.com/locations/qurayyat',
         type: 'website',
     },
 };
@@ -75,7 +75,7 @@ export default function QurayyatLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Qurayyat",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -84,7 +84,7 @@ export default function QurayyatLocationPage() {
             "postalCode": "77451",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/qurayyat",
+        "url": "https://www.haramtaxii.com/locations/qurayyat",
         "priceRange": "$$"
     };
 

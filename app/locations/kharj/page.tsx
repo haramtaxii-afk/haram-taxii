@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/kharj',
+        canonical: 'https://www.haramtaxii.com/locations/kharj',
     },
     title: 'Taxi Service in Al Kharj | Industrial City & Tourism',
     description: 'Trusted taxi service in Al Kharj. Transfers to Al Kharj Industrial City, Prince Sattam University, and Riyadh. 24/7 service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Kharj | Industry & History',
         description: 'Reliable transport in Al Kharj. Connecting the Industrial City, University, and historic palaces to Riyadh.',
-        url: 'http://www.haramtaxii.com/locations/kharj',
+        url: 'https://www.haramtaxii.com/locations/kharj',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function KharjLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Kharj",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function KharjLocationPage() {
             "postalCode": "16278",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/kharj",
+        "url": "https://www.haramtaxii.com/locations/kharj",
         "priceRange": "$$"
     };
 

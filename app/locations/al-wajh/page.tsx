@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-wajh',
+        canonical: 'https://www.haramtaxii.com/locations/al-wajh',
     },
     title: 'Taxi Service in Al Wajh | Red Sea Heritage & Airport',
     description: 'Premier taxi service in Al Wajh. Airport transfers (EJH), Old Town tours, and rides to Red Sea project sites.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Wajh | Historic Coast',
         description: 'Reliable transport in Al Wajh. Connecting the airport to the historic Balad and Red Sea resorts.',
-        url: 'http://www.haramtaxii.com/locations/al-wajh',
+        url: 'https://www.haramtaxii.com/locations/al-wajh',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlWajhLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Wajh",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlWajhLocationPage() {
             "postalCode": "48721",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-wajh",
+        "url": "https://www.haramtaxii.com/locations/al-wajh",
         "priceRange": "$$"
     };
 

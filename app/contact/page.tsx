@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Contact Us | Book Taxi in Saudi Arabia',
         description: 'Contact us for taxi bookings in Makkah, Madinah, Jeddah. Available 24/7.',
-        url: 'http://www.haramtaxii.com/contact',
+        url: 'https://www.haramtaxii.com/contact',
         type: 'website',
     },
 };
@@ -76,7 +76,7 @@ export default function ContactPage() {
         "@type": "ContactPage",
         "name": "Contact Haram Taxi Service",
         "description": "Contact us for taxi bookings in Makkah, Madinah, Jeddah.",
-        "url": "http://www.haramtaxii.com/contact",
+        "url": "https://www.haramtaxii.com/contact",
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",

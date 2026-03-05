@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/khamis-mushait',
+        canonical: 'https://www.haramtaxii.com/locations/khamis-mushait',
     },
     title: 'Taxi Service in Khamis Mushait | Military & Business City',
     description: 'Top-rated taxi service in Khamis Mushait. Transfers to Abha Airport, King Khalid Air Base, and commercial centers. 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Khamis Mushait | Southern Hub',
         description: 'Reliable transport in Khamis Mushait. Connecting the Military City, Abha Airport, and local markets.',
-        url: 'http://www.haramtaxii.com/locations/khamis-mushait',
+        url: 'https://www.haramtaxii.com/locations/khamis-mushait',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function KhamisLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Khamis Mushait",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function KhamisLocationPage() {
             "postalCode": "62431",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/khamis-mushait",
+        "url": "https://www.haramtaxii.com/locations/khamis-mushait",
         "priceRange": "$$"
     };
 

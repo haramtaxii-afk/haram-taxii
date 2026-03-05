@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/turaif',
+        canonical: 'https://www.haramtaxii.com/locations/turaif',
     },
     title: 'Taxi Service in Turaif | Mining City & Airport Transfer',
     description: 'Reliable taxi service in Turaif. Transfers to Turaif Domestic Airport (UIH), Ma\'aden Wa\'ad Al Shamal City, and Northern Borders.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Turaif | Industrial & Airport',
         description: 'Professional transport in Turaif. Serving the airport (UIH) and Wa\'ad Al Shamal industrial city.',
-        url: 'http://www.haramtaxii.com/locations/turaif',
+        url: 'https://www.haramtaxii.com/locations/turaif',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function TuraifLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Turaif",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function TuraifLocationPage() {
             "postalCode": "75311",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/turaif",
+        "url": "https://www.haramtaxii.com/locations/turaif",
         "priceRange": "$$"
     };
 

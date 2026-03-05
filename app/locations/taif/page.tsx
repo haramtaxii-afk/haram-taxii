@@ -13,7 +13,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/taif',
+        canonical: 'https://www.haramtaxii.com/locations/taif',
     },
     title: 'Taxi Service in Taif | Mountain Tours & City Rides - Haram Taxi',
     description: 'Book reliable taxi service in Taif, Saudi Arabia. Mountain tours, city transfers, and hotel pickups. Available 24/7. Call now for instant booking!',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Taif | Mountain Tours & City Rides',
         description: 'Professional taxi service in Taif. Mountain tours, city transfers, hotel pickups. Book now!',
-        url: 'http://www.haramtaxii.com/locations/taif',
+        url: 'https://www.haramtaxii.com/locations/taif',
         type: 'website',
     },
 };
@@ -79,9 +79,9 @@ export default function TaifPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service - Taif",
-        "image": "http://www.haramtaxii.com/taif-mountains-view.webp",
-        "@id": "http://www.haramtaxii.com/locations/taif",
-        "url": "http://www.haramtaxii.com/locations/taif",
+        "image": "https://www.haramtaxii.com/taif-mountains-view.webp",
+        "@id": "https://www.haramtaxii.com/locations/taif",
+        "url": "https://www.haramtaxii.com/locations/taif",
         "telephone": "+923132222436",
         "priceRange": "SAR 30-300",
         "address": {

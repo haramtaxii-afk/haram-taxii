@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/wadi-ad-dawasir',
+        canonical: 'https://www.haramtaxii.com/locations/wadi-ad-dawasir',
     },
     title: 'Taxi Service in Wadi Ad Dawasir | Airport Transfer & Heritage',
     description: 'Premier taxi service in Wadi Ad Dawasir. Transfers to Wadi Ad Dawasir Airport (WAE), Empty Quarter gateway, and historic palaces. 24/7 service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Wadi Ad Dawasir',
         description: 'Reliable transport in Wadi Ad Dawasir. Connecting you to the airport (WAE) and the gateway to the Empty Quarter.',
-        url: 'http://www.haramtaxii.com/locations/wadi-ad-dawasir',
+        url: 'https://www.haramtaxii.com/locations/wadi-ad-dawasir',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function WadiLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Wadi Ad Dawasir",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function WadiLocationPage() {
             "postalCode": "18615",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/wadi-ad-dawasir",
+        "url": "https://www.haramtaxii.com/locations/wadi-ad-dawasir",
         "priceRange": "$$"
     };
 

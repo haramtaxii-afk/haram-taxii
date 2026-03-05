@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/abha',
+        canonical: 'https://www.haramtaxii.com/locations/abha',
     },
     title: 'Taxi Service in Abha & Khamis Mushait | AHB Airport Taxi',
     description: 'Premier taxi service in Abha and Khamis Mushait. Reliable airport transfers (AHB), tours to Soudah, Green Mountain, and High City. 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Abha | Airport & Tourism',
         description: 'Comfortable rides in the cloudy city. Airport transfers and sightseeing tours in Abha.',
-        url: 'http://www.haramtaxii.com/locations/abha',
+        url: 'https://www.haramtaxii.com/locations/abha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AbhaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Abha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AbhaLocationPage() {
             "postalCode": "62521",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/abha",
+        "url": "https://www.haramtaxii.com/locations/abha",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/jubail',
+        canonical: 'https://www.haramtaxii.com/locations/jubail',
     },
     title: 'Taxi Service in Jubail | Industrial City & Royal Commission',
     description: 'Premier taxi service in Jubail. Transfers to Jubail Industrial City, Royal Commission, and Dammam Airport (DMM). Contract transport available.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Jubail | Industrial Hub Transport',
         description: 'Reliable transfers for Jubail Industrial City and Royal Commission. Corporate accounts and airport rides.',
-        url: 'http://www.haramtaxii.com/locations/jubail',
+        url: 'https://www.haramtaxii.com/locations/jubail',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function JubailLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Jubail",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function JubailLocationPage() {
             "postalCode": "31961",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/jubail",
+        "url": "https://www.haramtaxii.com/locations/jubail",
         "priceRange": "$$"
     };
 

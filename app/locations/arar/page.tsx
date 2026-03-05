@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/arar',
+        canonical: 'https://www.haramtaxii.com/locations/arar',
     },
     title: 'Taxi Service in Arar | Iraq Border & Airport Transfers',
     description: 'Reliable taxi in Arar. Transfers to Arar Airport (RAE) and Jadeed Arar Border (Iraq). 24/7 Service for business and pilgrims.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Arar | Iraq Border Crossing',
         description: 'Professional transport in Arar. Airport pickups and direct transfers to the Iraqi border.',
-        url: 'http://www.haramtaxii.com/locations/arar',
+        url: 'https://www.haramtaxii.com/locations/arar',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function ArarLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Arar",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function ArarLocationPage() {
             "postalCode": "73211",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/arar",
+        "url": "https://www.haramtaxii.com/locations/arar",
         "priceRange": "$$"
     };
 

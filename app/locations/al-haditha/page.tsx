@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-haditha',
+        canonical: 'https://www.haramtaxii.com/locations/al-haditha',
     },
     title: 'Taxi Service in Al Haditha | Jordan Border Crossing',
     description: 'Trusted taxi service at Al Haditha Land Port. Transfers to Qurayyat, Tabuk, and Jordan border. 24/7 passenger and cargo logistics support.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Haditha | Largest Land Port',
         description: 'Reliable transport at the Middle East\'s largest land port. Connecting Saudi Arabia and Jordan.',
-        url: 'http://www.haramtaxii.com/locations/al-haditha',
+        url: 'https://www.haramtaxii.com/locations/al-haditha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlHadithaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Haditha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlHadithaLocationPage() {
             "postalCode": "77451",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-haditha",
+        "url": "https://www.haramtaxii.com/locations/al-haditha",
         "priceRange": "$$"
     };
 

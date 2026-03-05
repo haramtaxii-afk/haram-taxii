@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700', '800', '900'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://www.haramtaxii.com'),
+  metadataBase: new URL('https://www.haramtaxii.com'),
   title: {
     default: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Jeddah to Makkah, Madinah',
     template: '%s | Haram Taxi Service'
@@ -203,13 +203,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Book Now',
     description: 'Trusted by thousands. Book your Umrah taxi from Jeddah to Makkah, Madinah to Makkah. VIP & Economy cars available. 24/7 Service.',
-    url: 'http://www.haramtaxii.com',
+    url: 'https://www.haramtaxii.com',
     siteName: 'Haram Taxi Service',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'http://www.haramtaxii.com/makkah-clock-tower-new.png',
+        url: 'https://www.haramtaxii.com/makkah-clock-tower-new.png',
         width: 1200,
         height: 630,
         alt: 'Haram Taxi Service - Online Taxi Booking in Saudi Arabia',
@@ -220,7 +220,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Online Taxi Service in Saudi Arabia | Book Now',
     description: 'Professional taxi service in Makkah, Madinah, Jeddah. Airport transfers, city rides. Available 24/7.',
-    images: ['http://www.haramtaxii.com/makkah-clock-tower-new.png'],
+    images: ['https://www.haramtaxii.com/makkah-clock-tower-new.png'],
     creator: '@haramtaxi',
   },
 

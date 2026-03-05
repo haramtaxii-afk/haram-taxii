@@ -13,7 +13,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/jeddah',
+        canonical: 'https://www.haramtaxii.com/locations/jeddah',
     },
     title: 'Taxi Service in Jeddah | Airport Transfer & City Rides - Haram Taxi',
     description: 'Book reliable taxi service in Jeddah, Saudi Arabia. Airport transfers, city tours, and hotel pickups. Available 24/7. Call now for instant booking!',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Jeddah | Airport Transfer & City Rides',
         description: 'Professional taxi service in Jeddah. Airport transfers, city tours, hotel pickups. Book now!',
-        url: 'http://www.haramtaxii.com/locations/jeddah',
+        url: 'https://www.haramtaxii.com/locations/jeddah',
         type: 'website',
     },
 };
@@ -110,9 +110,9 @@ export default function JeddahPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service - Jeddah",
-        "image": "http://www.haramtaxii.com/jeddah-corniche-sunset.webp",
-        "@id": "http://www.haramtaxii.com/locations/jeddah",
-        "url": "http://www.haramtaxii.com/locations/jeddah",
+        "image": "https://www.haramtaxii.com/jeddah-corniche-sunset.webp",
+        "@id": "https://www.haramtaxii.com/locations/jeddah",
+        "url": "https://www.haramtaxii.com/locations/jeddah",
         "telephone": "+923132222436",
         "priceRange": "SAR 30-600",
         "address": {

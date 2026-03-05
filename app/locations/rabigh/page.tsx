@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/rabigh',
+        canonical: 'https://www.haramtaxii.com/locations/rabigh',
     },
     title: 'Taxi Service in Rabigh | Industrial City & KAEC Transfer',
     description: 'Professional taxi service in Rabigh. Serving Rabigh Refining, Petro Rabigh, and KAEC. Reliable corporate transport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Rabigh | Industrial Hub',
         description: 'Reliable transport in Rabigh. Corporate rides for Petro Rabigh and industrial sectors.',
-        url: 'http://www.haramtaxii.com/locations/rabigh',
+        url: 'https://www.haramtaxii.com/locations/rabigh',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function RabighLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Rabigh",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function RabighLocationPage() {
             "postalCode": "25725",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/rabigh",
+        "url": "https://www.haramtaxii.com/locations/rabigh",
         "priceRange": "$$"
     };
 

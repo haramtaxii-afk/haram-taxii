@@ -6,8 +6,8 @@ export default function JsonLdOrganization() {
         "@type": "Organization",
         "name": "Haram Taxi Service",
         "alternateName": "HaramTaxi",
-        "url": "http://www.haramtaxii.com",
-        "logo": "http://www.haramtaxii.com/logo.png",
+        "url": "https://www.haramtaxii.com",
+        "logo": "https://www.haramtaxii.com/logo.png",
         "description": "Premium Umrah taxi and Hajj transport services across Saudi Arabia including airport transfers, Ziyarat tours, and intercity travel.",
         "address": {
             "@type": "PostalAddress",

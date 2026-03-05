@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-hofuf',
+        canonical: 'https://www.haramtaxii.com/locations/al-hofuf',
     },
     title: 'Taxi Service in Al Hofuf | Al Ahsa Oasis Taxi',
     description: 'Premier taxi service in Al Hofuf and Al Ahsa. Transfers to Al Ahsa Airport, Al Qara Mountain, and Riyadh. 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Hofuf | UNESCO Oasis',
         description: 'Reliable transport in Al Ahsa. Connecting you to the world\'s largest oasis and heritage sites.',
-        url: 'http://www.haramtaxii.com/locations/al-hofuf',
+        url: 'https://www.haramtaxii.com/locations/al-hofuf',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlHofufLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Hofuf",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlHofufLocationPage() {
             "postalCode": "31982",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-hofuf",
+        "url": "https://www.haramtaxii.com/locations/al-hofuf",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/duba',
+        canonical: 'https://www.haramtaxii.com/locations/duba',
     },
     title: 'Taxi Service in Duba | Port & Ferry Transfers',
     description: 'Reliable taxi service in Duba. Transfers to Duba Port (Egypt Ferry), Neom, and Tabuk Airport. 24/7 port pickup service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Duba | Pearl of the Red Sea',
         description: 'Transport services in Duba. Connecting the Ferry Port to Tabuk, Neom, and local hotels.',
-        url: 'http://www.haramtaxii.com/locations/duba',
+        url: 'https://www.haramtaxii.com/locations/duba',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function DubaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Duba",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function DubaLocationPage() {
             "postalCode": "47911",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/duba",
+        "url": "https://www.haramtaxii.com/locations/duba",
         "priceRange": "$$"
     };
 

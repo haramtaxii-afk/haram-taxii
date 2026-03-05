@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-ula',
+        canonical: 'https://www.haramtaxii.com/locations/al-ula',
     },
     title: 'Taxi Service in AlUla | Al-Ula Airport & Hegra Tours - Haram Taxi',
     description: 'Premier taxi service in Al Ula. Airport transfers (ULH), private tours to Hegra (Madain Saleh), Old Town, and Elephant Rock. Luxury SUVs available.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in AlUla | Hegra & Airport',
         description: 'Explore AlUla with our private chauffeur service. Airport transfers and historical tours.',
-        url: 'http://www.haramtaxii.com/locations/al-ula',
+        url: 'https://www.haramtaxii.com/locations/al-ula',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlUlaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service AlUla",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlUlaLocationPage() {
             "postalCode": "43511",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-ula",
+        "url": "https://www.haramtaxii.com/locations/al-ula",
         "priceRange": "$$$"
     };
 

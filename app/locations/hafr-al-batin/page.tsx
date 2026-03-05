@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/hafr-al-batin',
+        canonical: 'https://www.haramtaxii.com/locations/hafr-al-batin',
     },
     title: 'Taxi Service in Hafr Al Batin | Kuwait Border Transfer',
     description: 'Reliable taxi in Hafr Al Batin. Direct transfers to Al Raqi (Kuwait Border) and Qaisumah Airport (AQI). 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Hafr Al Batin | Kuwait Border',
         description: 'Professional transfers to the Kuwait border and Qaisumah Airport. Safe and affordable.',
-        url: 'http://www.haramtaxii.com/locations/hafr-al-batin',
+        url: 'https://www.haramtaxii.com/locations/hafr-al-batin',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function HafrLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Hafr Al Batin",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function HafrLocationPage() {
             "postalCode": "39921",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/hafr-al-batin",
+        "url": "https://www.haramtaxii.com/locations/hafr-al-batin",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/ras-tanura',
+        canonical: 'https://www.haramtaxii.com/locations/ras-tanura',
     },
     title: 'Taxi Service in Ras Tanura | Oil & Gas Business Transfers',
     description: 'Executive taxi service in Ras Tanura. Transfers to Aramco Refinery, Najmah Compound, and Dammam Airport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Ras Tanura | Energy Hub',
         description: 'Professional transport in Ras Tanura. Connecting the Oil & Gas sector to the Eastern Province.',
-        url: 'http://www.haramtaxii.com/locations/ras-tanura',
+        url: 'https://www.haramtaxii.com/locations/ras-tanura',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function RasTanuraLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Ras Tanura",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function RasTanuraLocationPage() {
             "postalCode": "31941",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/ras-tanura",
+        "url": "https://www.haramtaxii.com/locations/ras-tanura",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/majmaah',
+        canonical: 'https://www.haramtaxii.com/locations/majmaah',
     },
     title: 'Taxi Service in Al Majmaah | Railway Station & Sudair',
     description: 'Trusted taxi service in Al Majma\'ah. Transfers to Majmaah SAR Train Station, Sudair Industrial City, and Majmaah University. Riyadh airport rides.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Majmaah | Train & Industrial',
         description: 'Reliable rides in Al Majma\'ah. Connecting SAR Railway Station, Sudair Industrial City, and University.',
-        url: 'http://www.haramtaxii.com/locations/majmaah',
+        url: 'https://www.haramtaxii.com/locations/majmaah',
         type: 'website',
     },
 };
@@ -78,7 +78,7 @@ export default function MajmaahLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Majmaah",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -87,7 +87,7 @@ export default function MajmaahLocationPage() {
             "postalCode": "15362",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/majmaah",
+        "url": "https://www.haramtaxii.com/locations/majmaah",
         "priceRange": "$$"
     };
 

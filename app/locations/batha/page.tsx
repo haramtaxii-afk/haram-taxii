@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/batha',
+        canonical: 'https://www.haramtaxii.com/locations/batha',
     },
     title: 'Taxi Service in Batha | UAE Border Crossing Transfer',
     description: 'Premier taxi service in Batha. Long-distance transfers to UAE border, visa run trips, and rides from Riyadh & Al Ahsa.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Batha | Saudi-UAE Border',
         description: 'Reliable border transport. Connecting Riyadh and the Kingdom to the Batha Land Port.',
-        url: 'http://www.haramtaxii.com/locations/batha',
+        url: 'https://www.haramtaxii.com/locations/batha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function BathaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Batha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function BathaLocationPage() {
             "postalCode": "31961",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/batha",
+        "url": "https://www.haramtaxii.com/locations/batha",
         "priceRange": "$$"
     };
 

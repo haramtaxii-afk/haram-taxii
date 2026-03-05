@@ -13,7 +13,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/makkah',
+        canonical: 'https://www.haramtaxii.com/locations/makkah',
     },
     title: 'Makkah Taxi Service | Haram Taxi Service',
     description: 'Professional taxi service in Makkah. Airport transfers, hotel pickups, and city transportation. Available 24/7.',
@@ -98,8 +98,8 @@ export default function MakkahPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service - Makkah",
         "description": "Professional taxi service in Makkah. Book online for reliable transportation.",
-        "@id": "http://www.haramtaxii.com/locations/makkah",
-        "url": "http://www.haramtaxii.com/locations/makkah",
+        "@id": "https://www.haramtaxii.com/locations/makkah",
+        "url": "https://www.haramtaxii.com/locations/makkah",
         "telephone": "+923132222436",
         "priceRange": "$$",
         "address": {

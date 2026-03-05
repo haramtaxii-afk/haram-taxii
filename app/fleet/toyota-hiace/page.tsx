@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Toyota Hiace Group Van Taxi | 11-Seater',
         description: 'Book Toyota Hiace for group travel and tours in Saudi Arabia.',
-        url: 'http://www.haramtaxii.com/fleet/toyota-hiace',
+        url: 'https://www.haramtaxii.com/fleet/toyota-hiace',
         type: 'website',
     },
 };

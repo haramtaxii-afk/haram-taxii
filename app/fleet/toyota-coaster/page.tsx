@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Toyota Coaster Mini Bus Taxi | 17-Seater',
         description: 'Book Toyota Coaster for large group travel and corporate events.',
-        url: 'http://www.haramtaxii.com/fleet/toyota-coaster',
+        url: 'https://www.haramtaxii.com/fleet/toyota-coaster',
         type: 'website',
     },
 };

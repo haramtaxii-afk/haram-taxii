@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/bisha',
+        canonical: 'https://www.haramtaxii.com/locations/bisha',
     },
     title: 'Taxi Service in Bisha | Airport Transfer & Heritage',
     description: 'Trusted taxi service in Bisha. Transfers to Bisha Airport (BHH), King Fahd Dam, and agricultural tours. Connecting Asir with Central Saudi.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Bisha | Airport & Farm Tours',
         description: 'Reliable rides in Bisha. Airport transfers (BHH) and visits to the famous date palms and King Fahd Dam.',
-        url: 'http://www.haramtaxii.com/locations/bisha',
+        url: 'https://www.haramtaxii.com/locations/bisha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function BishaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Bisha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function BishaLocationPage() {
             "postalCode": "67711",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/bisha",
+        "url": "https://www.haramtaxii.com/locations/bisha",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/unaizah',
+        canonical: 'https://www.haramtaxii.com/locations/unaizah',
     },
     title: 'Taxi Service in Unaizah | Qassim Tourism & Dates',
     description: 'Best taxi service in Unaizah. Transfers to Buraidah, Prince Naif Airport (ELQ), and Al Ghadha Park. Reliable rides for festivals.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Unaizah | Paris of Najd',
         description: 'Comfortable transport in Unaizah. Connecting you to Qassim\'s heritage sites and Prince Naif Airport.',
-        url: 'http://www.haramtaxii.com/locations/unaizah',
+        url: 'https://www.haramtaxii.com/locations/unaizah',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function UnaizahLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Unaizah",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function UnaizahLocationPage() {
             "postalCode": "56219",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/unaizah",
+        "url": "https://www.haramtaxii.com/locations/unaizah",
         "priceRange": "$$"
     };
 

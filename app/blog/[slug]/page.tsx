@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: post.title,
         description: post.excerpt,
         alternates: {
-            canonical: `http://www.haramtaxii.com/blog/${slug}`,
+            canonical: `https://www.haramtaxii.com/blog/${slug}`,
         },
         openGraph: {
             title: post.title,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: 'article',
             publishedTime: post.date,
             authors: [post.author],
-            url: `http://www.haramtaxii.com/blog/${slug}`,
+            url: `https://www.haramtaxii.com/blog/${slug}`,
         },
     };
 }

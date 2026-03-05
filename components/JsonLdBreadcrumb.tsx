@@ -6,7 +6,7 @@ import Script from 'next/script';
 export default function JsonLdBreadcrumb() {
     const pathname = usePathname();
 
-    const baseUrl = 'http://www.haramtaxii.com';
+    const baseUrl = 'https://www.haramtaxii.com';
 
     // Split path and remove empty strings
     const segments = pathname.split('/').filter(Boolean);

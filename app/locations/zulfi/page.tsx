@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/zulfi',
+        canonical: 'https://www.haramtaxii.com/locations/zulfi',
     },
     title: 'Taxi Service in Zulfi | Desert Tours & Qassim Transfer',
     description: 'Reliable taxi service in Zulfi. Transfers to Qassim Airport, Riyadh, and desert trips to Al-Kasar Heritage Village.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Zulfi | Dunes of Najd',
         description: 'Comfortable transport in Zulfi. Connecting you to the stunning sand dunes and heritage sites.',
-        url: 'http://www.haramtaxii.com/locations/zulfi',
+        url: 'https://www.haramtaxii.com/locations/zulfi',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function ZulfiLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Zulfi",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function ZulfiLocationPage() {
             "postalCode": "15971",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/zulfi",
+        "url": "https://www.haramtaxii.com/locations/zulfi",
         "priceRange": "$$"
     };
 

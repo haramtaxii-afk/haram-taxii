@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/rafha',
+        canonical: 'https://www.haramtaxii.com/locations/rafha',
     },
     title: 'Taxi Service in Rafha | Airport Transfer & Northern Borders',
     description: 'Trusted taxi service in Rafha. Transfers to Rafha Airport (RAH), Lina historic village, and intercity rides to Hafr Al Batin or Arar.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Rafha | Airport & History',
         description: 'Reliable transport in Rafha. Connecting you to the airport (RAH) and the historic village of Lina.',
-        url: 'http://www.haramtaxii.com/locations/rafha',
+        url: 'https://www.haramtaxii.com/locations/rafha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function RafhaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Rafha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function RafhaLocationPage() {
             "postalCode": "76311",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/rafha",
+        "url": "https://www.haramtaxii.com/locations/rafha",
         "priceRange": "$$"
     };
 

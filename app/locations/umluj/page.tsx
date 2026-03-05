@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/umluj',
+        canonical: 'https://www.haramtaxii.com/locations/umluj',
     },
     title: 'Taxi Service in Umluj | Maldives of Saudi Arabia',
     description: 'Premium taxi service in Umluj. Transfers to Red Sea Airport (RSI), Umluj Port, and white sand beaches. Intercity rides to Yanbu and Tabuk.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Umluj | Red Sea Paradise',
         description: 'Reliable transport in Umluj. Connecting you to the pristine beaches and the Red Sea International Airport.',
-        url: 'http://www.haramtaxii.com/locations/umluj',
+        url: 'https://www.haramtaxii.com/locations/umluj',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function UmlujLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Umluj",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function UmlujLocationPage() {
             "postalCode": "48311",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/umluj",
+        "url": "https://www.haramtaxii.com/locations/umluj",
         "priceRange": "$$$"
     };
 

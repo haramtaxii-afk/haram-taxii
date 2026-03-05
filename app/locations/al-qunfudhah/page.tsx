@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-qunfudhah',
+        canonical: 'https://www.haramtaxii.com/locations/al-qunfudhah',
     },
     title: 'Trusted Taxi Service in Al Qunfudhah | Red Sea Coast Rides',
     description: 'Reliable taxi service in Al Qunfudhah near the Corniche & 28821. Flat-rate transfers to Jeddah/Abha with no hidden fees. Call or book online today.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Qunfudhah | Coastal Transport',
         description: 'Professional limo and taxi service in Al Qunfudhah. Safe rides to Palm Beach, Historical Castle, and hospitals.',
-        url: 'http://www.haramtaxii.com/locations/al-qunfudhah',
+        url: 'https://www.haramtaxii.com/locations/al-qunfudhah',
         type: 'website',
     },
 };
@@ -77,7 +77,7 @@ export default function AlQunfudhahLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Qunfudhah",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -86,7 +86,7 @@ export default function AlQunfudhahLocationPage() {
             "postalCode": "28821",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-qunfudhah",
+        "url": "https://www.haramtaxii.com/locations/al-qunfudhah",
         "priceRange": "$$"
     };
 

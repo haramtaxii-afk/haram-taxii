@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service Locations in Saudi Arabia',
         description: 'Professional taxi service in Makkah, Madinah, Jeddah, and Taif. Book now!',
-        url: 'http://www.haramtaxii.com/locations',
+        url: 'https://www.haramtaxii.com/locations',
         type: 'website',
     },
 };
@@ -470,7 +470,7 @@ export default function LocationsPage() {
         "provider": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "url": "http://www.haramtaxii.com"
+            "url": "https://www.haramtaxii.com"
         },
         "areaServed": locations.map(loc => ({
             "@type": "City",

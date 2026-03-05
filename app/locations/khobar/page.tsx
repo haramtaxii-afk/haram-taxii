@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/khobar',
+        canonical: 'https://www.haramtaxii.com/locations/khobar',
     },
     title: 'Taxi Service in Al Khobar | Bahrain Causeway & Corniche',
     description: 'Premium taxi service in Al Khobar. Transfers to Bahrain (King Fahd Causeway), Dammam Airport (DMM), and Half Moon Bay. VIP Chauffeur services available.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Khobar | Bahrain & Airport Transfer',
         description: 'Reliable rides in Al Khobar. Direct transfers to Bahrain via the Causeway and King Fahd Airport.',
-        url: 'http://www.haramtaxii.com/locations/khobar',
+        url: 'https://www.haramtaxii.com/locations/khobar',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function KhobarLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Khobar",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function KhobarLocationPage() {
             "postalCode": "31952",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/khobar",
+        "url": "https://www.haramtaxii.com/locations/khobar",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-namas',
+        canonical: 'https://www.haramtaxii.com/locations/al-namas',
     },
     title: 'Taxi Service in Al Namas | City of Fog Taxi',
     description: 'Trusted taxi service in Al Namas and Tanomah. Transfers to Abha Airport, local parks, and scenic mountain tours. 24/7 Availability.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Namas | Asir Mountains',
         description: 'Explore the City of Fog. Safe rides through the scenic Sarawat Mountains and Al Namas parks.',
-        url: 'http://www.haramtaxii.com/locations/al-namas',
+        url: 'https://www.haramtaxii.com/locations/al-namas',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlNamasLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Namas",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlNamasLocationPage() {
             "postalCode": "67393",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-namas",
+        "url": "https://www.haramtaxii.com/locations/al-namas",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/shaqra',
+        canonical: 'https://www.haramtaxii.com/locations/shaqra',
     },
     title: 'Taxi Service in Shaqra & Ushaiger | Heritage Tours',
     description: 'Reliable taxi service in Shaqra and Ushaiger. Transfers to Riyadh, Buraydah, and historic heritage villages. Book now.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Shaqra & Ushaiger | Najd Heritage',
         description: 'Explore the heart of Najd. Safe transport to Ushaiger Heritage Village and Shaqra University.',
-        url: 'http://www.haramtaxii.com/locations/shaqra',
+        url: 'https://www.haramtaxii.com/locations/shaqra',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function ShaqraLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Shaqra",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function ShaqraLocationPage() {
             "postalCode": "11961",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/shaqra",
+        "url": "https://www.haramtaxii.com/locations/shaqra",
         "priceRange": "$$"
     };
 

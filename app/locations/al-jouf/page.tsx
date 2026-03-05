@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-jouf',
+        canonical: 'https://www.haramtaxii.com/locations/al-jouf',
     },
     title: 'Taxi Service in Al Jouf (Sakaka) | Olive Oil Tours & Airport',
     description: 'Trusted taxi in Al Jouf. Transfers to Al Jouf Airport (AJF), Marid Castle tours, and visits to olive farms. Reliable Sakaka and Dumat al-Jandal transport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Jouf (Sakaka) | Heritage & Airport',
         description: 'Explore the land of olives with a private driver. Airport transfers (AJF) and historical tours in Sakaka.',
-        url: 'http://www.haramtaxii.com/locations/al-jouf',
+        url: 'https://www.haramtaxii.com/locations/al-jouf',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlJoufLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Jouf",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlJoufLocationPage() {
             "postalCode": "72341",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-jouf",
+        "url": "https://www.haramtaxii.com/locations/al-jouf",
         "priceRange": "$$"
     };
 

@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-ahsa',
+        canonical: 'https://www.haramtaxii.com/locations/al-ahsa',
     },
     title: 'Taxi Service in Al Ahsa (Hofuf) | Qatar & UAE Border Transfer',
     description: 'Trusted taxi in Al Ahsa. Transfers to Salwa (Qatar Border) and Batha (UAE Border). Visit Al Qara Mountain and Al Ahsa Airport (HOF).',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Ahsa | Hofuf & Border Transfers',
         description: 'Reliable rides in Al Ahsa. Border crossing transfers to Qatar and UAE. Visit the UNESCO Oasis.',
-        url: 'http://www.haramtaxii.com/locations/al-ahsa',
+        url: 'https://www.haramtaxii.com/locations/al-ahsa',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlAhsaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Ahsa",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlAhsaLocationPage() {
             "postalCode": "31982",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-ahsa",
+        "url": "https://www.haramtaxii.com/locations/al-ahsa",
         "priceRange": "$$"
     };
 

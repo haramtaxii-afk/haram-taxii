@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/dammam',
+        canonical: 'https://www.haramtaxii.com/locations/dammam',
     },
     title: 'Trusted Taxi Service in Dammam | Airport & Bahrain Causeway Transfers',
     description: 'Professional taxi service in Dammam. Airport transfers to King Fahd Int\'l (DMM), Bahrain Causeway rides, and intercity travel. Licensed & Insured.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Dammam | DMM Airport & Bahrain',
         description: 'Reliable taxi in Dammam. Servicing Airport (DMM), Al Khobar, and Bahrain Causeway. Book now.',
-        url: 'http://www.haramtaxii.com/locations/dammam',
+        url: 'https://www.haramtaxii.com/locations/dammam',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function DammamLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Dammam",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function DammamLocationPage() {
             "postalCode": "31411",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/dammam",
+        "url": "https://www.haramtaxii.com/locations/dammam",
         "priceRange": "$$"
     };
 

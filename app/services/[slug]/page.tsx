@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: service.title,
         description: service.description,
         alternates: {
-            canonical: `http://www.haramtaxii.com/services/${slug}`,
+            canonical: `https://www.haramtaxii.com/services/${slug}`,
         },
         openGraph: {
             title: service.title,
             description: service.description,
             type: 'website',
-            url: `http://www.haramtaxii.com/services/${slug}`,
+            url: `https://www.haramtaxii.com/services/${slug}`,
         },
     };
 }

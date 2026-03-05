@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/tabuk',
+        canonical: 'https://www.haramtaxii.com/locations/tabuk',
     },
     title: 'Taxi Service in Tabuk & NEOM | The Line & Airport Transfers',
     description: 'Professional taxi service in Tabuk and NEOM. Airport transfers to Prince Sultan Airport (TUU) and NEOM Bay (NUM). Rides to The Line, Trojena, and Sindalah.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Tabuk & NEOM | The Line',
         description: 'Reliable transport for NEOM project visitors and Tabuk residents. Airport transfers and site visits.',
-        url: 'http://www.haramtaxii.com/locations/tabuk',
+        url: 'https://www.haramtaxii.com/locations/tabuk',
         type: 'website',
     },
 };
@@ -79,7 +79,7 @@ export default function TabukLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Tabuk",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -88,7 +88,7 @@ export default function TabukLocationPage() {
             "postalCode": "47913",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/tabuk",
+        "url": "https://www.haramtaxii.com/locations/tabuk",
         "priceRange": "$$"
     };
 

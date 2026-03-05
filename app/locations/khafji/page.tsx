@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/khafji',
+        canonical: 'https://www.haramtaxii.com/locations/khafji',
     },
     title: 'Taxi Service in Khafji | Kuwait Border & Joint Operations',
     description: 'Trusted taxi service in Khafji. Transfers to Kuwait Border (Al Khafji Joint Operations), Dammam Airport, and local business hubs.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Khafji | Border & Business',
         description: 'Reliable transport in Al Khafji. Connecting you to the Kuwait Border and Dammam/Khobar.',
-        url: 'http://www.haramtaxii.com/locations/khafji',
+        url: 'https://www.haramtaxii.com/locations/khafji',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function KhafjiLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Khafji",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function KhafjiLocationPage() {
             "postalCode": "39271",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/khafji",
+        "url": "https://www.haramtaxii.com/locations/khafji",
         "priceRange": "$$"
     };
 

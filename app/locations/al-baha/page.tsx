@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-baha',
+        canonical: 'https://www.haramtaxii.com/locations/al-baha',
     },
     title: 'Taxi Service in Al Baha | Airport & Thee Ain Village',
     description: 'Reliable taxi service in Al Baha. Transfers to Al Baha Airport (ABT), Thee Ain Heritage Village, and Raghdan Forest Park.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Baha | Mountain Resort Transport',
         description: 'Explore Al Baha\'s mountains and heritage with a private driver. Airport transfers (ABT) available 24/7.',
-        url: 'http://www.haramtaxii.com/locations/al-baha',
+        url: 'https://www.haramtaxii.com/locations/al-baha',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlBahaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Baha",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlBahaLocationPage() {
             "postalCode": "65522",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-baha",
+        "url": "https://www.haramtaxii.com/locations/al-baha",
         "priceRange": "$$"
     };
 

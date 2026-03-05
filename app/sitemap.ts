@@ -6,7 +6,8 @@ import { servicesData } from '@/lib/servicesData'
 import { blogData } from '@/lib/blogData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'http://www.haramtaxii.com'
+    const baseUrl = 'https://www.haramtaxii.com'
+    const siteLastUpdated = '2026-03-05'
 
     // Get all location directories dynamically
     const locationsDir = path.join(process.cwd(), 'app/locations')
@@ -17,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             locationPages = fs.readdirSync(locationsDir)
                 .filter(file => {
                     const fullPath = path.join(locationsDir, file)
-                    return fs.statSync(fullPath).isDirectory() && file !== '[slug]' // Exclude dynamic placeholders if present
+                    return fs.statSync(fullPath).isDirectory() && file !== '[slug]'
                 })
                 .map(city => `/locations/${city}`)
         }
@@ -42,66 +43,101 @@ export default function sitemap(): MetadataRoute.Sitemap {
         console.error('Error reading fleet directory for sitemap:', e)
     }
 
-    // Static pages
-    const routes = [
-        '',
-        '/about',
+    // Homepage
+    const homepage = [{
+        url: baseUrl,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'daily' as const,
+        priority: 1,
+    }]
+
+    // Core pages (change often, high value)
+    const corePages = [
         '/booking',
-        '/contact',
-        '/faq',
-        '/fleet',
+        '/services',
+        '/routes',
         '/locations',
-        '/privacy-policy',
-        '/terms-conditions',
-        '/services', // The main services page
-        '/routes',   // The main routes page
-        '/blog',     // The main blog page
+        '/fleet',
+        '/blog',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
-        lastModified: new Date(),
-        changeFrequency: (route === '' ? 'daily' : 'weekly') as 'daily' | 'weekly',
-        priority: route === '' ? 1 : 0.8,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
     }))
 
-    // Add fleet pages to sitemap
-    const fleetSitemap = fleetPages.map((route) => ({
+    // Informational pages (change rarely)
+    const infoPages = [
+        '/about',
+        '/contact',
+        '/faq',
+    ].map((route) => ({
         url: `${baseUrl}${route}`,
-        lastModified: new Date(),
+        lastModified: new Date(siteLastUpdated),
         changeFrequency: 'monthly' as const,
         priority: 0.7,
     }))
 
-    // Add location pages to sitemap
+    // Legal pages (almost never change)
+    const legalPages = [
+        '/privacy-policy',
+        '/terms-conditions',
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'yearly' as const,
+        priority: 0.3,
+    }))
+
+    // Location pages — key SEO landing pages, high priority
     const locationSitemap = locationPages.map((route) => ({
         url: `${baseUrl}${route}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7, // Locations are important landing pages
-    }))
-
-    // Add dynamic routes (from lib/routesData)
-    const routesSitemap = routesData.map((route) => ({
-        url: `${baseUrl}/routes/${route.slug}`,
-        lastModified: new Date(),
+        lastModified: new Date(siteLastUpdated),
         changeFrequency: 'weekly' as const,
-        priority: 0.8,
+        priority: 0.9,
     }))
 
-    // Add dynamic services (from lib/servicesData)
-    const servicesSitemap = servicesData.map((service) => ({
-        url: `${baseUrl}/services/${service.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-    }))
-
-    // Add dynamic blog posts (from lib/blogData)
-    const blogSitemap = blogData.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
-        lastModified: new Date(post.date), // Use actual post date if available
+    // Fleet pages
+    const fleetSitemap = fleetPages.map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(siteLastUpdated),
         changeFrequency: 'monthly' as const,
         priority: 0.6,
     }))
 
-    return [...routes, ...fleetSitemap, ...locationSitemap, ...routesSitemap, ...servicesSitemap, ...blogSitemap]
+    // Dynamic routes (from lib/routesData)
+    const routesSitemap = routesData.map((route) => ({
+        url: `${baseUrl}/routes/${route.slug}`,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }))
+
+    // Dynamic services (from lib/servicesData)
+    const servicesSitemap = servicesData.map((service) => ({
+        url: `${baseUrl}/services/${service.slug}`,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }))
+
+    // Dynamic blog posts (from lib/blogData)
+    const blogSitemap = blogData.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }))
+
+    return [
+        ...homepage,
+        ...corePages,
+        ...infoPages,
+        ...legalPages,
+        ...locationSitemap,
+        ...fleetSitemap,
+        ...routesSitemap,
+        ...servicesSitemap,
+        ...blogSitemap,
+    ]
 }

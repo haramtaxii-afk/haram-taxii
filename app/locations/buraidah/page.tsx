@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/buraidah',
+        canonical: 'https://www.haramtaxii.com/locations/buraidah',
     },
     title: 'Taxi Service in Al Qassim | Buraidah & Unayzah Transfers',
     description: 'Reliable taxi service in Al Qassim. Transfers between Buraidah, Unayzah, and Prince Naif Airport (ELQ). Intercity rides to Riyadh.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Qassim | Buraidah & Unayzah',
         description: 'Professional taxi service across the Qassim region. Airport transfers and intercity travel.',
-        url: 'http://www.haramtaxii.com/locations/buraidah',
+        url: 'https://www.haramtaxii.com/locations/buraidah',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function QassimLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Qassim",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function QassimLocationPage() {
             "postalCode": "51411",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/buraidah",
+        "url": "https://www.haramtaxii.com/locations/buraidah",
         "priceRange": "$$"
     };
 

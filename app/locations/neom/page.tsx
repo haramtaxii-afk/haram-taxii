@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/neom',
+        canonical: 'https://www.haramtaxii.com/locations/neom',
     },
     title: 'Taxi Service in NEOM | The Line & Trojena Transfers',
     description: 'Premier taxi service in NEOM. Luxury transfers to The Line, Trojena, Sindalah, and Oxagon. Connecting NEOM Bay Airport (NUM) with the future.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in NEOM | Future City Transport',
         description: 'Reliable rides in NEOM. Connecting you to the airport (NUM), The Line, and Trojena.',
-        url: 'http://www.haramtaxii.com/locations/neom',
+        url: 'https://www.haramtaxii.com/locations/neom',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function NeomLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service NEOM",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function NeomLocationPage() {
             "postalCode": "49643",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/neom",
+        "url": "https://www.haramtaxii.com/locations/neom",
         "priceRange": "$$$"
     };
 

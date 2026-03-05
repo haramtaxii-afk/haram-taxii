@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/abqaiq',
+        canonical: 'https://www.haramtaxii.com/locations/abqaiq',
     },
     title: 'Taxi Service in Abqaiq | Aramco Community Taxi',
     description: 'Premier taxi service in Abqaiq (Buqayq). Reliable transfers to Dammam Airport, Hofuf, and Dhahran. Serving Aramco compounds.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Abqaiq | Oil Industry Hub',
         description: 'Trusted drivers in Abqaiq. Safe transport for Aramco employees and families.',
-        url: 'http://www.haramtaxii.com/locations/abqaiq',
+        url: 'https://www.haramtaxii.com/locations/abqaiq',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AbqaiqLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Abqaiq",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AbqaiqLocationPage() {
             "postalCode": "33261",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/abqaiq",
+        "url": "https://www.haramtaxii.com/locations/abqaiq",
         "priceRange": "$$"
     };
 

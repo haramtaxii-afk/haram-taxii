@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/al-rass',
+        canonical: 'https://www.haramtaxii.com/locations/al-rass',
     },
     title: 'Taxi Service in Al Rass | Qassim Region Taxi',
     description: 'Trusted taxi service in Al Rass. Transfers to Buraidah, Qassim Airport, and Medina. Reliable local and intercity rides.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Al Rass | Qassim Gateway',
         description: 'Professional transport in Al Rass. Connecting you to Qassim Airport and the Holy Cities.',
-        url: 'http://www.haramtaxii.com/locations/al-rass',
+        url: 'https://www.haramtaxii.com/locations/al-rass',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function AlRassLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Rass",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function AlRassLocationPage() {
             "postalCode": "58839",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/al-rass",
+        "url": "https://www.haramtaxii.com/locations/al-rass",
         "priceRange": "$$"
     };
 

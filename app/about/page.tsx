@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'About Us | Professional Taxi Service in Saudi Arabia',
         description: 'Professional taxi service in Makkah, Madinah, Jeddah. Reliable transportation across Saudi Arabia.',
-        url: 'http://www.haramtaxii.com/about',
+        url: 'https://www.haramtaxii.com/about',
         type: 'website',
     },
 };
@@ -99,8 +99,8 @@ export default function AboutPage() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Haram Taxi Service",
-        "url": "http://www.haramtaxii.com",
-        "logo": "http://www.haramtaxii.com/logo.png",
+        "url": "https://www.haramtaxii.com",
+        "logo": "https://www.haramtaxii.com/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+923132222436",

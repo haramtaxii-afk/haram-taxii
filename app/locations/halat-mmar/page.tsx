@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/halat-mmar',
+        canonical: 'https://www.haramtaxii.com/locations/halat-mmar',
     },
     title: 'Taxi Service in Halat Ammar | Hajj & Umrah Border Taxi',
     description: 'Premier taxi service in Halat Ammar. Serving pilgrims and travelers crossing the Saudi-Jordan border. Transfers to Tabuk and Medinah.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Halat Ammar | Pilgrim Gateway',
         description: 'Dedicated transport for Hajj and Umrah pilgrims entering from Jordan. Reliable transfers to Tabuk.',
-        url: 'http://www.haramtaxii.com/locations/halat-mmar',
+        url: 'https://www.haramtaxii.com/locations/halat-mmar',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function HalatAmmarLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Halat Ammar",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function HalatAmmarLocationPage() {
             "postalCode": "49661",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/halat-mmar",
+        "url": "https://www.haramtaxii.com/locations/halat-mmar",
         "priceRange": "$$"
     };
 

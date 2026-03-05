@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/salwa',
+        canonical: 'https://www.haramtaxii.com/locations/salwa',
     },
     title: 'Taxi Service in Salwa | Qatar Border Crossing Transfer',
     description: 'Trusted taxi service in Salwa. Direct transfers to Qatar border, visa run trips, and rides from Al Ahsa & Dammam. 24/7 Service.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Salwa | Saudi-Qatar Border',
         description: 'Reliable border transport. Connecting Dammam and Al Ahsa to the Salwa Land Port.',
-        url: 'http://www.haramtaxii.com/locations/salwa',
+        url: 'https://www.haramtaxii.com/locations/salwa',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function SalwaLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Salwa",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function SalwaLocationPage() {
             "postalCode": "36461",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/salwa",
+        "url": "https://www.haramtaxii.com/locations/salwa",
         "priceRange": "$$"
     };
 

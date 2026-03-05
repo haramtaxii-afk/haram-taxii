@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/sharurah',
+        canonical: 'https://www.haramtaxii.com/locations/sharurah',
     },
     title: 'Taxi Service in Sharurah | Empty Quarter & Yemen Border',
     description: 'Specialized taxi service in Sharurah. Transfers to Sharurah Airport (SHW) and Al Wadeeah Border (Yemen Crossing). Deep desert transport.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Sharurah | Border & Desert',
         description: 'Your reliable ride in Sharurah. Airport pickups (SHW) and direct transfers to Al Wadeeah Border Post.',
-        url: 'http://www.haramtaxii.com/locations/sharurah',
+        url: 'https://www.haramtaxii.com/locations/sharurah',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function SharurahLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Sharurah",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function SharurahLocationPage() {
             "postalCode": "68311",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/sharurah",
+        "url": "https://www.haramtaxii.com/locations/sharurah",
         "priceRange": "$$"
     };
 

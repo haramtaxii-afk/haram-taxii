@@ -13,7 +13,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/madinah',
+        canonical: 'https://www.haramtaxii.com/locations/madinah',
     },
     title: 'Taxi Service in Madinah | Airport Transfer & Ziyarat Tours - Haram Taxi',
     description: 'Book reliable taxi service in Madinah, Saudi Arabia. Airport transfers, hotel pickups, and Ziyarat tours. Available 24/7. Call now for instant booking!',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Madinah | Airport Transfer & Ziyarat Tours',
         description: 'Professional taxi service in Madinah. Airport transfers, Ziyarat tours, hotel pickups. Book now!',
-        url: 'http://www.haramtaxii.com/locations/madinah',
+        url: 'https://www.haramtaxii.com/locations/madinah',
         type: 'website',
     },
 };
@@ -109,9 +109,9 @@ export default function MadinahPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service - Madinah",
-        "image": "http://www.haramtaxii.com/madinah-prophets-mosque.webp",
-        "@id": "http://www.haramtaxii.com/locations/madinah",
-        "url": "http://www.haramtaxii.com/locations/madinah",
+        "image": "https://www.haramtaxii.com/madinah-prophets-mosque.webp",
+        "@id": "https://www.haramtaxii.com/locations/madinah",
+        "url": "https://www.haramtaxii.com/locations/madinah",
         "telephone": "+923132222436",
         "priceRange": "SAR 20-600",
         "address": {

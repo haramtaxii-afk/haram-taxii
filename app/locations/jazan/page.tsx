@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/jazan',
+        canonical: 'https://www.haramtaxii.com/locations/jazan',
     },
     title: 'Taxi Service in Jazan | Airport, Port & Farasan Ferry Transfers',
     description: 'Trusted taxi service in Jazan. Transfers to King Abdullah Airport (GIZ), Jazan Port for Farasan Ferry, and Economic City. 24/7 reliability.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Jazan | GIZ Airport & Port',
         description: 'Reliable taxi in Jazan. Servicing King Abdullah Airport, Ferry Terminal, and Industrial City. Book now.',
-        url: 'http://www.haramtaxii.com/locations/jazan',
+        url: 'https://www.haramtaxii.com/locations/jazan',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function JazanLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Jazan",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -82,7 +82,7 @@ export default function JazanLocationPage() {
             "postalCode": "82722",
             "addressCountry": "SA"
         },
-        "url": "http://www.haramtaxii.com/locations/jazan",
+        "url": "https://www.haramtaxii.com/locations/jazan",
         "priceRange": "$$"
     };
 

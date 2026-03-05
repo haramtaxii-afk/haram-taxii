@@ -9,7 +9,7 @@ import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'http://www.haramtaxii.com/locations/riyadh',
+        canonical: 'https://www.haramtaxii.com/locations/riyadh',
     },
     title: 'Taxi Service in Riyadh | Professional Chauffeur & City Transfer',
     description: 'Book trusted taxi service in Riyadh. Airport transfer to King Khalid Int\'l Airport (RUH), city tours, and intercity rides. 24/7 professional drivers.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Service in Riyadh | Professional Chauffeur',
         description: 'Reliable taxi service in Riyadh. Airport transfers, city tours, and private chauffeurs. Book now!',
-        url: 'http://www.haramtaxii.com/locations/riyadh',
+        url: 'https://www.haramtaxii.com/locations/riyadh',
         type: 'website',
     },
 };
@@ -73,7 +73,7 @@ export default function RiyadhLocationPage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Riyadh",
-        "image": "http://www.haramtaxii.com/logo.png",
+        "image": "https://www.haramtaxii.com/logo.png",
         "telephone": "+923132222436",
         "address": {
             "@type": "PostalAddress",
@@ -87,7 +87,7 @@ export default function RiyadhLocationPage() {
             "latitude": 24.7136,
             "longitude": 46.6753
         },
-        "url": "http://www.haramtaxii.com/locations/riyadh",
+        "url": "https://www.haramtaxii.com/locations/riyadh",
         "priceRange": "$$"
     };
 
