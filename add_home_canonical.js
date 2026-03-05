@@ -12,7 +12,7 @@ if (!content.includes("import { Metadata } from 'next';")) {
 const metadataBlock = `
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://haramtaxiservice.com',
+    canonical: 'http://www.haramtaxii.com',
   },
 };
 `;

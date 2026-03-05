@@ -13,10 +13,10 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /booking-confirmed/
 
-Sitemap: https://haramtaxiservice.com/sitemap.xml
+Sitemap: http://www.haramtaxii.com/sitemap.xml
 ```
 
-**Access:** https://haramtaxiservice.com/robots.txt
+**Access:** http://www.haramtaxii.com/robots.txt
 
 ---
 
@@ -29,7 +29,7 @@ Sitemap: https://haramtaxiservice.com/sitemap.xml
 - Fleet Pages (6): GMC Yukon, Toyota Camry, Hyundai Staria, Toyota Hiace, Toyota Coaster, Hyundai Starex
 - Location Pages (6): Makkah, Madinah, Jeddah, Taif, AlUla, Khayber Fort
 
-**Access:** https://haramtaxiservice.com/sitemap.xml
+**Access:** http://www.haramtaxii.com/sitemap.xml
 
 ---
 
@@ -39,7 +39,7 @@ Sitemap: https://haramtaxiservice.com/sitemap.xml
 #### Global Canonical (layout.tsx):
 ```typescript
 alternates: {
-  canonical: 'https://haramtaxiservice.com',
+  canonical: 'http://www.haramtaxii.com',
 }
 ```
 
@@ -47,27 +47,27 @@ alternates: {
 All individual pages have canonical URLs in their metadata:
 
 **Fleet Pages:**
-- `/fleet/gmc-yukon` → https://haramtaxiservice.com/fleet/gmc-yukon
-- `/fleet/toyota-camry` → https://haramtaxiservice.com/fleet/toyota-camry
-- `/fleet/hyundai-staria` → https://haramtaxiservice.com/fleet/hyundai-staria
-- `/fleet/toyota-hiace` → https://haramtaxiservice.com/fleet/toyota-hiace
-- `/fleet/toyota-coaster` → https://haramtaxiservice.com/fleet/toyota-coaster
-- `/fleet/hyundai-starex` → https://haramtaxiservice.com/fleet/hyundai-starex
+- `/fleet/gmc-yukon` → http://www.haramtaxii.com/fleet/gmc-yukon
+- `/fleet/toyota-camry` → http://www.haramtaxii.com/fleet/toyota-camry
+- `/fleet/hyundai-staria` → http://www.haramtaxii.com/fleet/hyundai-staria
+- `/fleet/toyota-hiace` → http://www.haramtaxii.com/fleet/toyota-hiace
+- `/fleet/toyota-coaster` → http://www.haramtaxii.com/fleet/toyota-coaster
+- `/fleet/hyundai-starex` → http://www.haramtaxii.com/fleet/hyundai-starex
 
 **Location Pages:**
-- `/locations/makkah` → https://haramtaxiservice.com/locations/makkah
-- `/locations/madinah` → https://haramtaxiservice.com/locations/madinah
-- `/locations/jeddah` → https://haramtaxiservice.com/locations/jeddah
-- `/locations/taif` → https://haramtaxiservice.com/locations/taif
-- `/locations/alula` → https://haramtaxiservice.com/locations/alula
-- `/locations/khayber-fort` → https://haramtaxiservice.com/locations/khayber-fort
+- `/locations/makkah` → http://www.haramtaxii.com/locations/makkah
+- `/locations/madinah` → http://www.haramtaxii.com/locations/madinah
+- `/locations/jeddah` → http://www.haramtaxii.com/locations/jeddah
+- `/locations/taif` → http://www.haramtaxii.com/locations/taif
+- `/locations/alula` → http://www.haramtaxii.com/locations/alula
+- `/locations/khayber-fort` → http://www.haramtaxii.com/locations/khayber-fort
 
 **Core Pages:**
-- `/about` → https://haramtaxiservice.com/about
-- `/contact` → https://haramtaxiservice.com/contact
-- `/booking` → https://haramtaxiservice.com/booking
-- `/fleet` → https://haramtaxiservice.com/fleet
-- `/locations` → https://haramtaxiservice.com/locations
+- `/about` → http://www.haramtaxii.com/about
+- `/contact` → http://www.haramtaxii.com/contact
+- `/booking` → http://www.haramtaxii.com/booking
+- `/fleet` → http://www.haramtaxii.com/fleet
+- `/locations` → http://www.haramtaxii.com/locations
 
 ---
 
@@ -178,7 +178,7 @@ All pages include:
 ## 🎯 NEXT STEPS (Optional)
 
 ### Google Search Console:
-1. Submit sitemap: https://haramtaxiservice.com/sitemap.xml
+1. Submit sitemap: http://www.haramtaxii.com/sitemap.xml
 2. Verify ownership
 3. Monitor indexing
 4. Check for errors
@@ -206,6 +206,6 @@ All pages include:
 - Fast loading improves user experience
 
 **Last Updated:** December 19, 2025
-**Domain:** https://haramtaxiservice.com
+**Domain:** http://www.haramtaxii.com
 **Total Pages:** 18
 **SEO Status:** Production Ready ✅

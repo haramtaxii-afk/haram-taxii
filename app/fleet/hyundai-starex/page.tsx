@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Hyundai Starex Family Van Taxi | 7-Seater',
         description: 'Book Hyundai Starex for reliable family travel in Saudi Arabia.',
-        url: 'https://haramtaxiservice.com/fleet/hyundai-starex',
+        url: 'http://www.haramtaxii.com/fleet/hyundai-starex',
         type: 'website',
     },
 };

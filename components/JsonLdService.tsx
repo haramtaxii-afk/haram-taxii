@@ -14,7 +14,7 @@ export default function JsonLdService() {
                 },
                 "areaServed": "Saudi Arabia",
                 "serviceType": "Airport Transfer",
-                "url": "https://haramtaxiservice.com/locations/jeddah"
+                "url": "http://www.haramtaxii.com/locations/jeddah"
             },
             {
                 "@type": "TaxiService",
@@ -26,7 +26,7 @@ export default function JsonLdService() {
                 },
                 "areaServed": ["Makkah", "Madinah"],
                 "serviceType": "Religious Travel",
-                "url": "https://haramtaxiservice.com/locations/makkah"
+                "url": "http://www.haramtaxii.com/locations/makkah"
             },
             {
                 "@type": "TaxiService",
@@ -38,7 +38,7 @@ export default function JsonLdService() {
                 },
                 "areaServed": "Saudi Arabia",
                 "serviceType": "VIP Transport",
-                "url": "https://haramtaxiservice.com/fleet"
+                "url": "http://www.haramtaxii.com/fleet"
             }
         ]
     };

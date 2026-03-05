@@ -616,7 +616,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                         </div>
                         <h3 className={`text-xl sm:text-2xl font-bold ${textPrimary} px-2`}>Booking Confirmed!</h3>
                         <p className={`text-sm sm:text-base ${textSecondary} px-2 sm:px-4`}>
-                            Thank you for choosing Haram Taxi Service. We&apos;ve sent a confirmation email to <strong className="break-all">{formData.customer_email}</strong>.
+                            Thank you for choosing Haram Taxi Service. We&apos;ve sent a confirmation email to your inbox. For any queries, contact us at <strong className="break-all">info@haramtaxii.com</strong>.
                         </p>
                         <Button
                             type="button"

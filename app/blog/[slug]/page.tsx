@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: post.title,
         description: post.excerpt,
         alternates: {
-            canonical: `https://haramtaxiservice.com/blog/${slug}`,
+            canonical: `http://www.haramtaxii.com/blog/${slug}`,
         },
         openGraph: {
             title: post.title,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: 'article',
             publishedTime: post.date,
             authors: [post.author],
-            url: `https://haramtaxiservice.com/blog/${slug}`,
+            url: `http://www.haramtaxii.com/blog/${slug}`,
         },
     };
 }
@@ -120,7 +120,7 @@ export default async function BlogPostPage({ params }: Props) {
                             <div className="relative z-10">
                                 <h3 className="text-xl font-bold mb-2">Need Help?</h3>
                                 <p className="text-gray-400 mb-6 text-sm">Call our 24/7 support line for immediate assistance.</p>
-                                <a href="tel:+923080628195" className="block">
+                                <a href="tel:+923132222436" className="block">
                                     <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 group font-bold">
                                         Call Now
                                     </Button>

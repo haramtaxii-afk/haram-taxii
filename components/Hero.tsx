@@ -27,9 +27,9 @@ export default function Hero(props: HeroProps) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const slides = images || [
-        '/makkah-clock-tower.webp',
-        '/madinah-prophets-mosque.webp',
-        '/gmc-yukon.webp',
+        '/makkah-clock-tower.webp?v=2',
+        '/madinah-prophets-mosque.webp?v=2',
+        '/gmc-yukon.webp?v=2',
     ];
 
     const slideAltTexts = [
@@ -209,7 +209,7 @@ export default function Hero(props: HeroProps) {
                             <div className="p-6 space-y-4">
                                 {/* WhatsApp CTA — primary action */}
                                 <a
-                                    href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
+                                    href="https://wa.me/923132222436?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl text-lg transition-all hover:scale-[1.02] shadow-lg shadow-green-500/20"

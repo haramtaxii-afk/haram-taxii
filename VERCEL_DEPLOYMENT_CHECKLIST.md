@@ -29,7 +29,7 @@ RESEND_API_KEY=re_5kKdnCAR_mLeyHteVFREEe5LwnZFy5Exx
 
 # Admin Configuration
 ADMIN_EMAIL=taxiserviceksa9988@gmail.com
-NEXT_PUBLIC_SITE_URL=https://haramtaxiservice.com
+NEXT_PUBLIC_SITE_URL=http://www.haramtaxii.com
 ```
 
 **Important:** Set these for **Production**, **Preview**, and **Development** environments.

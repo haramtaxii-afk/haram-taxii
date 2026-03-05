@@ -5,7 +5,21 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__execute_sql",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "WebFetch(domain:www.haramtaxii.com)",
+      "WebFetch(domain:haramtaxii.com)",
+      "mcp__supabase__list_storage_buckets",
+      "Bash(curl:*)",
+      "WebFetch(domain:xyuhzrdhlfiwfxyzjjhj.supabase.co)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
 }

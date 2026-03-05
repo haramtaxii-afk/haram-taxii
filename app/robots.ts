@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/admin/', '/booking-confirmed/'],
             },
         ],
-        sitemap: 'https://haramtaxiservice.com/sitemap.xml',
+        sitemap: 'http://www.haramtaxii.com/sitemap.xml',
     }
 }

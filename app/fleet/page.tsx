@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Taxi Fleet in Saudi Arabia | Premium Vehicles',
         description: 'Luxury SUVs, sedans, and vans for taxi service in Saudi Arabia. Book now!',
-        url: 'https://haramtaxiservice.com/fleet',
+        url: 'http://www.haramtaxii.com/fleet',
         type: 'website',
     },
 };

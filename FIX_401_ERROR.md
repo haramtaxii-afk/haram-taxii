@@ -128,7 +128,7 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGc...your_key_here
 RESEND_API_KEY=re_...your_key_here
 
 # Admin
-ADMIN_EMAIL=haramtaxiservice@gmail.com
+ADMIN_EMAIL=info@haramtaxii.com
 ```
 
 ---

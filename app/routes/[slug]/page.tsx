@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: route.title,
         description: route.description,
         alternates: {
-            canonical: `https://haramtaxiservice.com/routes/${slug}`,
+            canonical: `http://www.haramtaxii.com/routes/${slug}`,
         },
         openGraph: {
             title: route.title,
             description: route.description,
             type: 'website',
-            url: `https://haramtaxiservice.com/routes/${slug}`,
+            url: `http://www.haramtaxii.com/routes/${slug}`,
         },
     };
 }
@@ -61,11 +61,11 @@ export default async function RoutePage({ params }: Props) {
         "provider": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+923080628195",
-            "image": "https://haramtaxiservice.com/logo.png"
+            "telephone": "+923132222436",
+            "image": "http://www.haramtaxii.com/logo.png"
         },
         "areaServed": "Saudi Arabia",
-        "url": `https://haramtaxiservice.com/routes/${route.slug}`,
+        "url": `http://www.haramtaxii.com/routes/${route.slug}`,
         "offers": route.pricing.map(p => ({
             "@type": "Offer",
             "priceCurrency": "SAR",

@@ -26,7 +26,7 @@ import FounderNote from '@/components/FounderNote';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://haramtaxiservice.com',
+    canonical: 'http://www.haramtaxii.com',
   },
 };
 
@@ -35,10 +35,10 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Haram Taxi Service - Premium Transportation",
-    "url": "https://haramtaxiservice.com",
+    "url": "http://www.haramtaxii.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://haramtaxiservice.com/search?q={search_term_string}",
+      "target": "http://www.haramtaxii.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -46,11 +46,9 @@ export default async function Home() {
   const initialPrayerTimes = await getPrayerTimes('Makkah');
 
   const heroImages = [
-    '/makkah-royal-clock-tower.webp',
-    '/masjid-nabawi-madinah.webp',
-    '/gmc-yukon-xl-taxi.webp',
-    '/jeddah-corniche-view.webp',
-    '/makkah-haram-night-view.webp',
+    '/makkah-clock-tower.webp?v=4',
+    '/madinah-prophets-mosque.webp?v=4',
+    '/gmc-yukon.webp?v=4',
   ];
 
   const services = [
@@ -725,7 +723,7 @@ export default async function Home() {
                 </Button>
               </Link>
               <a
-                href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
+                href="https://wa.me/923132222436?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
                 target="_blank"
                 rel="noopener noreferrer"
               >

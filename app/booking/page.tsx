@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Book Taxi Online in Saudi Arabia | Instant Booking',
         description: 'Book taxi online with instant confirmation. Makkah, Madinah, Jeddah. Available 24/7.',
-        url: 'https://haramtaxiservice.com/booking',
+        url: 'http://www.haramtaxii.com/booking',
         type: 'website',
     },
 };

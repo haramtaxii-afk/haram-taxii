@@ -259,7 +259,7 @@ export default function TermsPage() {
                                 <li>• Pricing discrepancies</li>
                             </ul>
                             <p className="text-gray-700 mt-4 font-semibold">
-                                Please report to us within 24 hours via haramtaxiservice@gmail.com. We investigate all complaints seriously and take corrective action where needed.
+                                Please report to us within 24 hours via info@haramtaxii.com. We investigate all complaints seriously and take corrective action where needed.
                             </p>
                         </div>
                     </section>
@@ -287,8 +287,8 @@ export default function TermsPage() {
                             If you have questions about these Terms and Conditions, please contact us:
                         </p>
                         <div className="space-y-2 text-teal-50">
-                            <p><strong>Email:</strong> haramtaxiservice@gmail.com</p>
-                            <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxiservice.com</Link></p>
+                            <p><strong>Email:</strong> info@haramtaxii.com</p>
+                            <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxii.com</Link></p>
                             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
                         </div>
                     </section>

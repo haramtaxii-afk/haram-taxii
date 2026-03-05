@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Car, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -52,26 +53,25 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
                     {/* Brand Column */}
                     <div>
-                        <Link href="/" className="flex items-center gap-3 mb-6 group">
-                            <div className="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center shadow-lg shadow-brand-teal/20 group-hover:bg-brand-teal-light transition-colors">
-                                <Car className="w-7 h-7 text-white" />
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-xl font-display font-bold text-white tracking-wide">
-                                    Haram <span className="text-brand-teal">Taxi</span>
-                                </span>
-                                <span className="text-[10px] text-gray-500 uppercase tracking-widest font-medium ml-0.5">Premium Service</span>
+                        <Link href="/" className="flex items-center mb-6 group">
+                            <div className="relative w-48 h-12">
+                                <Image
+                                    src="/logo/logo.png"
+                                    alt="Haram Taxi"
+                                    fill
+                                    className="object-contain object-left"
+                                />
                             </div>
                         </Link>
                         <p className="text-sm text-gray-400 mb-6 leading-relaxed">
                             Professional taxi service across Saudi Arabia. Available 24/7 for your transportation needs, specializing in Umrah and Hajj transfers.
                         </p>
                         <div className="mb-6">
-                            <a href="mailto:haramtaxiservice@gmail.com" className="text-brand-teal hover:text-brand-teal-light text-sm flex items-center gap-3 transition-colors font-medium">
+                            <a href="mailto:info@haramtaxii.com" className="text-brand-teal hover:text-brand-teal-light text-sm flex items-center gap-3 transition-colors font-medium">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                haramtaxiservice@gmail.com
+                                info@haramtaxii.com
                             </a>
                         </div>
                         <div className="flex gap-4">

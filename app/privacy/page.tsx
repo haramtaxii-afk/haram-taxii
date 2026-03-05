@@ -212,8 +212,8 @@ export default function PrivacyPage() {
                             If you have questions about this Privacy Policy or how we handle your data, please contact us:
                         </p>
                         <div className="space-y-2 text-teal-50">
-                            <p><strong>Email:</strong> haramtaxiservice@gmail.com</p>
-                            <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxiservice.com</Link></p>
+                            <p><strong>Email:</strong> info@haramtaxii.com</p>
+                            <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxii.com</Link></p>
                             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
                         </div>
                     </section>

@@ -7,59 +7,59 @@
     /* ─────────────────────────────────────────────────────────
      * Haram Taxi Service — Color System (60-30-10 Rule)
      *
-     * 60% Dominant : White / Light Gray  (backgrounds, cards)
-     * 30% Secondary: Teal #0f766e        (nav, sections, borders)
-     * 10% Accent   : Amber #d97706       (CTAs, stars, badges)
+     * 60% Dominant : Light Background #F2F6F7 
+     * 30% Secondary: Deep Navy Blue #112D4E     
+     * 10% Accent   : Warm Gold #D2B57B      
      * ───────────────────────────────────────────────────────── */
 
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    --background: 192 24% 96%;
+    --foreground: 213 64% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card: 192 24% 98%;
+    --card-foreground: 213 64% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 192 24% 98%;
+    --popover-foreground: 213 64% 15%;
 
-    /* PRIMARY — Teal 700 (#0f766e) — Trust + Calm */
-    --primary: 175 77% 26%;
+    /* PRIMARY — Deep Navy Blue (#112D4E) */
+    --primary: 213 64% 19%;
     --primary-foreground: 0 0% 100%;
 
-    /* SECONDARY — Teal 100 (#ccfbf1) — Soft teal for backgrounds/chips */
-    --secondary: 166 76% 91%;
-    --secondary-foreground: 175 77% 20%;
+    /* SECONDARY — Warm Gold (#D2B57B) */
+    --secondary: 40 49% 65%;
+    --secondary-foreground: 213 64% 15%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 192 24% 92%;
+    --muted-foreground: 213 30% 40%;
 
-    /* ACCENT — Amber 600 (#d97706) — 10% warmth, premium, CTA highlight */
-    --accent: 38 92% 50%;
+    /* ACCENT — Warm Gold (#D2B57B) */
+    --accent: 40 49% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 92%;
-    --input: 0 0% 92%;
-    --ring: 175 77% 26%;
+    --border: 192 24% 90%;
+    --input: 192 24% 90%;
+    --ring: 213 64% 19%;
 
     --radius: 0.5rem;
 
     /* ── Brand Tokens (use these for consistency) ── */
-    --brand-teal: 175 77% 26%;
-    /* #0f766e — primary */
-    --brand-teal-light: 175 60% 40%;
-    /* #2a9d8f — hover states */
-    --brand-teal-pale: 166 76% 91%;
-    /* #ccfbf1 — backgrounds */
-    --brand-teal-dark: 175 77% 15%;
-    /* Darker teal for gradients */
-    --brand-amber: 38 92% 50%;
-    /* #d97706 — accent */
-    --brand-amber-light: 43 96% 56%;
-    /* #fbbf24 — stars, highlights */
-    --brand-amber-pale: 48 96% 89%;
-    /* #fef3c7 — badge backgrounds */
+    --brand-teal: 213 64% 19%;
+    /* #112d4e — primary (remapped from teal to navy) */
+    --brand-teal-light: 213 50% 30%;
+    /* hover states */
+    --brand-teal-pale: 213 50% 92%;
+    /* backgrounds */
+    --brand-teal-dark: 213 70% 12%;
+    /* Darker navy for gradients */
+    --brand-amber: 40 49% 65%;
+    /* #D2B57B — accent (remapped from amber to gold) */
+    --brand-amber-light: 40 60% 75%;
+    /* stars, highlights */
+    --brand-amber-pale: 40 60% 90%;
+    /* badge backgrounds */
   }
 
   .dark {
@@ -72,16 +72,19 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 175 77% 26%;
+    /* PRIMARY — Deep Navy Blue */
+    --primary: 213 64% 19%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    /* SECONDARY — Warm Gold */
+    --secondary: 40 49% 65%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 38 92% 50%;
+    /* ACCENT — Warm Gold */
+    --accent: 40 49% 65%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -89,7 +92,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 175 77% 26%;
+    --ring: 213 64% 19%;
   }
 }
 

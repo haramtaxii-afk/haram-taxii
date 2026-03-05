@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const targetDir = 'd:\\Taxi KSA\\haramtaxiservice';
+const targetDir = 'd:\\Taxi KSA\\haramtaxii';
 
 function replaceInDir(dirPath) {
     const items = fs.readdirSync(dirPath);
@@ -19,13 +19,13 @@ function replaceInDir(dirPath) {
             let content = fs.readFileSync(fullPath, 'utf8');
             let modified = false;
 
-            if (content.includes('923080628195')) {
-                content = content.replace(/923080628195/g, '923080628195');
+            if (content.includes('923132222436')) {
+                content = content.replace(/923132222436/g, '923132222436');
                 modified = true;
             }
 
             if (content.includes('92-308-062-8195')) {
-                // Change any variants of +92-308-062-8195 to +92-308-062-8195
+                // Change any variants of +92-313-222-2436 to +92-313-222-2436
                 content = content.replace(/92-308-062-8195/g, '92-308-062-8195');
                 modified = true;
             }

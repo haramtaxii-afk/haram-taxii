@@ -65,7 +65,7 @@ Make sure your `.env.local` has the correct Resend API key:
 
 ```env
 RESEND_API_KEY=re_...your_key_here
-ADMIN_EMAIL=haramtaxiservice@gmail.com
+ADMIN_EMAIL=info@haramtaxii.com
 ```
 
 **To find your API key:**
@@ -105,7 +105,7 @@ In your terminal where `npm run dev` is running, look for:
 **Solution**: Add `RESEND_API_KEY=re_...` to `.env.local` and restart server
 
 ### Error: "Admin email not configured"
-**Solution**: Add `ADMIN_EMAIL=haramtaxiservice@gmail.com` to `.env.local`
+**Solution**: Add `ADMIN_EMAIL=info@haramtaxii.com` to `.env.local`
 
 ---
 
@@ -135,7 +135,7 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 RESEND_API_KEY=re_your_resend_api_key_here
 
 # Admin
-ADMIN_EMAIL=haramtaxiservice@gmail.com
+ADMIN_EMAIL=info@haramtaxii.com
 ```
 
 ---

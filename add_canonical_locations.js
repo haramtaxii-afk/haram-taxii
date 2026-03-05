@@ -25,7 +25,7 @@ dirs.forEach(dir => {
         return;
     }
 
-    const canonicalUrl = `https://haramtaxiservice.com/locations/${dir}`;
+    const canonicalUrl = `http://www.haramtaxii.com/locations/${dir}`;
     const alternatesBlock = `
     alternates: {
         canonical: '${canonicalUrl}',

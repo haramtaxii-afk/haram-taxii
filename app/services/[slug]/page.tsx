@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: service.title,
         description: service.description,
         alternates: {
-            canonical: `https://haramtaxiservice.com/services/${slug}`,
+            canonical: `http://www.haramtaxii.com/services/${slug}`,
         },
         openGraph: {
             title: service.title,
             description: service.description,
             type: 'website',
-            url: `https://haramtaxiservice.com/services/${slug}`,
+            url: `http://www.haramtaxii.com/services/${slug}`,
         },
     };
 }
@@ -109,7 +109,7 @@ export default async function ServicePage({ params }: Props) {
                                     Book Now
                                 </Button>
                             </Link>
-                            <a href="tel:+923080628195">
+                            <a href="tel:+923132222436">
                                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
                                     <Phone className="w-5 h-5 mr-2" /> Call Us
                                 </Button>
@@ -217,14 +217,14 @@ export default async function ServicePage({ params }: Props) {
                         <div className="bg-gray-900 rounded-2xl p-8 text-white text-center">
                             <h3 className="text-xl font-bold mb-4">Need Help?</h3>
                             <p className="text-gray-400 mb-6 text-sm">Our support team is available 24/7 to assist you with your booking.</p>
-                            <a href="tel:+923080628195" className="block mb-4">
+                            <a href="tel:+923132222436" className="block mb-4">
                                 <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 group">
                                     <Phone className="w-4 h-4 mr-2 group-hover:text-teal-500 transition-colors" /> Call Support
                                 </Button>
                             </a>
                             <div className="text-xs text-gray-500">
                                 <span className="block mb-1">Email us at:</span>
-                                <a href="mailto:support@haramtaxiservice.com" className="text-teal-400 hover:text-white transition-colors">support@haramtaxiservice.com</a>
+                                <a href="mailto:info@haramtaxii.com" className="text-teal-400 hover:text-white transition-colors">info@haramtaxii.com</a>
                             </div>
                         </div>
                     </div>

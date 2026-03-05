@@ -94,12 +94,12 @@ export default function PricingPage() {
                             <BookingForm />
 
                             <div className="mt-8 pt-8 border-t border-gray-100 space-y-4">
-                                <a href="https://wa.me/923080628195" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/923132222436" target="_blank" rel="noopener noreferrer">
                                     <Button className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white">
                                         <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp Us
                                     </Button>
                                 </a>
-                                <a href="tel:+923080628195">
+                                <a href="tel:+923132222436">
                                     <Button variant="outline" className="w-full">
                                         <Phone className="w-4 h-4 mr-2" /> Call Now
                                     </Button>

@@ -132,7 +132,7 @@ Homepage (Authority: 100)
 - Taif, AlUla, Khayber Fort
 
 // Contact
-- Email: haramtaxiservice@gmail.com
+- Email: info@haramtaxii.com
 - Social media links
 ```
 

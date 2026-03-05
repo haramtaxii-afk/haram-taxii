@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Contact Us | Book Taxi in Saudi Arabia',
         description: 'Contact us for taxi bookings in Makkah, Madinah, Jeddah. Available 24/7.',
-        url: 'https://haramtaxiservice.com/contact',
+        url: 'http://www.haramtaxii.com/contact',
         type: 'website',
     },
 };
@@ -76,12 +76,12 @@ export default function ContactPage() {
         "@type": "ContactPage",
         "name": "Contact Haram Taxi Service",
         "description": "Contact us for taxi bookings in Makkah, Madinah, Jeddah.",
-        "url": "https://haramtaxiservice.com/contact",
+        "url": "http://www.haramtaxii.com/contact",
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+923080628195",
-            "email": "haramtaxiservice@gmail.com",
+            "telephone": "+923132222436",
+            "email": "info@haramtaxii.com",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Makkah / Madinah / Jeddah",
@@ -113,9 +113,9 @@ export default function ContactPage() {
                         </p>
 
                         <div className="mt-8">
-                            <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-brand-teal hover:text-brand-teal-dark font-semibold text-lg hover:underline transition-all">
+                            <a href="mailto:info@haramtaxii.com" className="inline-flex items-center gap-2 text-brand-teal hover:text-brand-teal-dark font-semibold text-lg hover:underline transition-all">
                                 <Mail className="w-5 h-5" />
-                                haramtaxiservice@gmail.com
+                                info@haramtaxii.com
                             </a>
                         </div>
                     </div>

@@ -6,8 +6,8 @@ export default function JsonLdOrganization() {
         "@type": "Organization",
         "name": "Haram Taxi Service",
         "alternateName": "HaramTaxi",
-        "url": "https://haramtaxiservice.com",
-        "logo": "https://haramtaxiservice.com/logo.png",
+        "url": "http://www.haramtaxii.com",
+        "logo": "http://www.haramtaxii.com/logo.png",
         "description": "Premium Umrah taxi and Hajj transport services across Saudi Arabia including airport transfers, Ziyarat tours, and intercity travel.",
         "address": {
             "@type": "PostalAddress",
@@ -21,7 +21,7 @@ export default function JsonLdOrganization() {
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+92-308-062-8195",
+            "telephone": "+92-313-222-2436",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["en", "ar", "ur"]

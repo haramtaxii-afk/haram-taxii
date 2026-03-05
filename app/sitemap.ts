@@ -6,7 +6,7 @@ import { servicesData } from '@/lib/servicesData'
 import { blogData } from '@/lib/blogData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://haramtaxiservice.com'
+    const baseUrl = 'http://www.haramtaxii.com'
 
     // Get all location directories dynamically
     const locationsDir = path.join(process.cwd(), 'app/locations')

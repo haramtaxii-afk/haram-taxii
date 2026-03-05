@@ -17,7 +17,7 @@ Successfully converted the Umrah Taxi Service website to **Haram Taxi Service** 
 
 ### Website URL
 - **Old**: https://umrahtaxi.site
-- **New**: https://haramtaxiservice.com
+- **New**: http://www.haramtaxii.com
 
 ---
 

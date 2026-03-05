@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 
 const API_KEY = "a749f888cbd84e268b9c9b016050fe94";
-const SITE_URL = "https://haramtaxiservice.com";
+const SITE_URL = "http://www.haramtaxii.com";
 
 // Main Pages
 const mainPages = [

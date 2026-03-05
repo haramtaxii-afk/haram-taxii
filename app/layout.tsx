@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700', '800', '900'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haramtaxiservice.com'),
+  metadataBase: new URL('http://www.haramtaxii.com'),
   title: {
     default: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Jeddah to Makkah, Madinah',
     template: '%s | Haram Taxi Service'
@@ -203,13 +203,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Book Now',
     description: 'Trusted by thousands. Book your Umrah taxi from Jeddah to Makkah, Madinah to Makkah. VIP & Economy cars available. 24/7 Service.',
-    url: 'https://haramtaxiservice.com',
+    url: 'http://www.haramtaxii.com',
     siteName: 'Haram Taxi Service',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://haramtaxiservice.com/makkah-clock-tower-new.png',
+        url: 'http://www.haramtaxii.com/makkah-clock-tower-new.png',
         width: 1200,
         height: 630,
         alt: 'Haram Taxi Service - Online Taxi Booking in Saudi Arabia',
@@ -220,12 +220,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Online Taxi Service in Saudi Arabia | Book Now',
     description: 'Professional taxi service in Makkah, Madinah, Jeddah. Airport transfers, city rides. Available 24/7.',
-    images: ['https://haramtaxiservice.com/makkah-clock-tower-new.png'],
+    images: ['http://www.haramtaxii.com/makkah-clock-tower-new.png'],
     creator: '@haramtaxi',
   },
 
   verification: {
-    // google: 'TODO: Add new verification code',
+    google: '_LhTM9CZVpRRR6sk4Fnp3m1ftXsR25x-HISXcXfFOtE',
   },
   category: 'Transportation Services',
   viewport: {
@@ -250,7 +250,7 @@ export default function RootLayout({
       <head>
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JNCTT4HVXD"
+          src="https://www.googletagmanager.com/gtag/js?id=G-4J112C1K73"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -258,7 +258,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-JNCTT4HVXD');
+            gtag('config', 'G-4J112C1K73');
           `}
         </Script>
       </head>

@@ -1,6 +1,6 @@
 # Complete SEO Audit Checklist - Haram Taxi Service
 **Last Updated:** December 19, 2025  
-**Domain:** https://haramtaxiservice.com  
+**Domain:** http://www.haramtaxii.com  
 **Status:** Production Ready ✅
 
 ---

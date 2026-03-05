@@ -13,6 +13,7 @@ import {
     X,
     MapPin
 } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { cn } from '@/lib/utils'; // Assuming you have a utils file for class merging
@@ -57,11 +58,15 @@ export default function AdminSidebar() {
                 <div className="flex flex-col h-full">
                     {/* Logo Section */}
                     <div className="h-20 flex items-center px-6 border-b border-neutral-800">
-                        <Link href="/admin/dashboard" className="flex items-center gap-2">
-                            <div className="bg-primary/20 p-2 rounded-lg">
-                                <Car className="h-6 w-6 text-primary" />
+                        <Link href="/admin/dashboard" className="flex items-center w-full">
+                            <div className="relative w-40 h-10">
+                                <Image
+                                    src="/logo/logo.png"
+                                    alt="Admin Panel"
+                                    fill
+                                    className="object-contain object-left"
+                                />
                             </div>
-                            <span className="text-xl font-bold text-white">Admin<span className="text-primary">Panel</span></span>
                         </Link>
                     </div>
 

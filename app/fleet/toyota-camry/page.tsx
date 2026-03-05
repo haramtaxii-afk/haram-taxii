@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Toyota Camry Sedan Taxi | Business & City Travel',
         description: 'Book Toyota Camry for comfortable business and city travel in Saudi Arabia.',
-        url: 'https://haramtaxiservice.com/fleet/toyota-camry',
+        url: 'http://www.haramtaxii.com/fleet/toyota-camry',
         type: 'website',
     },
 };

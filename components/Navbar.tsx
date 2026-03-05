@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Car, ChevronDown, MessageCircle } from 'lucide-react';
+import Image from 'next/image';
 import HeaderDate from '@/components/HeaderDate';
 
 export default function Navbar() {
@@ -46,15 +47,15 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 group">
-                        <div className="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center group-hover:bg-brand-teal-dark transition-all shadow-lg shadow-brand-teal/20">
-                            <Car className="w-7 h-7 text-white" />
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-2xl font-bold text-gray-900 font-display tracking-tight">
-                                Haram <span className="text-brand-teal">Taxi</span>
-                            </span>
-                            <span className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold ml-0.5">Premium Service</span>
+                    <Link href="/" className="flex items-center group">
+                        <div className="relative w-[220px] h-[67px]">
+                            <Image
+                                src="/logo/logo.png"
+                                alt="Haram Taxi"
+                                fill
+                                className="object-contain object-left"
+                                priority
+                            />
                         </div>
                     </Link>
 
@@ -145,7 +146,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/923132222436?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -257,7 +258,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/923132222436?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}
