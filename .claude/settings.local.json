@@ -15,7 +15,9 @@
       "WebFetch(domain:haramtaxii.com)",
       "mcp__supabase__list_storage_buckets",
       "Bash(curl:*)",
-      "WebFetch(domain:xyuhzrdhlfiwfxyzjjhj.supabase.co)"
+      "WebFetch(domain:xyuhzrdhlfiwfxyzjjhj.supabase.co)",
+      "WebFetch(domain:taxiserviceksa.com)",
+      "Bash(cp:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

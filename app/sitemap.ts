@@ -66,6 +66,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }))
 
+    // Partner pages
+    const partnerPages = [
+        '/partners',
+        '/partners/driver-registration',
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(siteLastUpdated),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }))
+
     // Informational pages (change rarely)
     const infoPages = [
         '/about',
@@ -132,6 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         ...homepage,
         ...corePages,
+        ...partnerPages,
         ...infoPages,
         ...legalPages,
         ...locationSitemap,

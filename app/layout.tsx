@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import localFont from 'next/font/local';
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,9 +11,29 @@ import JsonLdOrganization from '@/components/JsonLdOrganization';
 import JsonLdLocalBusiness from '@/components/JsonLdLocalBusiness';
 import JsonLdService from '@/components/JsonLdService';
 
+const inter = localFont({
+  src: [
+    { path: '../public/fonts/inter-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: '../public/fonts/inter-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: '../public/fonts/inter-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: '../public/fonts/inter-latin-700-normal.woff2', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700', '800', '900'] });
+const playfair = localFont({
+  src: [
+    { path: '../public/fonts/playfair-display-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: '../public/fonts/playfair-display-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: '../public/fonts/playfair-display-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: '../public/fonts/playfair-display-latin-700-normal.woff2', weight: '700', style: 'normal' },
+    { path: '../public/fonts/playfair-display-latin-800-normal.woff2', weight: '800', style: 'normal' },
+    { path: '../public/fonts/playfair-display-latin-900-normal.woff2', weight: '900', style: 'normal' },
+  ],
+  variable: '--font-playfair',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.haramtaxii.com'),

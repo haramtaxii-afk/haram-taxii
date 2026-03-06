@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
 import BookingForm from '@/components/BookingForm';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight, MessageCircle } from 'lucide-react';
 import { Suspense } from 'react';
 
 interface Props {
@@ -109,9 +109,9 @@ export default async function ServicePage({ params }: Props) {
                                     Book Now
                                 </Button>
                             </Link>
-                            <a href="tel:+923132222436">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
-                                    <Phone className="w-5 h-5 mr-2" /> Call Us
+                            <a href="https://wa.me/923132222436?text=As-salamu%20alaykum%2C%20I%20want%20to%20get%20a%20quotation%20for%20this%20service." target="_blank" rel="noopener noreferrer">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-[#25D366] hover:border-[#25D366] hover:text-white px-8 py-6 text-lg transition-colors">
+                                    <MessageCircle className="w-5 h-5 mr-2 fill-current" /> Get Quotation Now
                                 </Button>
                             </a>
                         </div>

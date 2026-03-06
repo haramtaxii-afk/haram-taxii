@@ -568,3 +568,433 @@ export function statusChangeEmail(bookingId: string | number, status: string, cu
 
     return null;
 }
+
+// ─── DRIVER REGISTRATION EMAILS ──────────────────────────────
+
+interface DriverRegistrationData {
+    full_name: string;
+    phone: string;
+    email: string;
+    city: string;
+    vehicle_model: string;
+    owns_vehicle: boolean;
+    has_saudi_license: boolean;
+    vehicle_condition_ok: boolean;
+    speaks_languages: boolean;
+    background_check_agreed: boolean;
+}
+
+export function driverRegistrationClientEmail(data: DriverRegistrationData): { subject: string; html: string } {
+    const html = baseLayout(`
+        ${headerBlock('Application Received')}
+
+        <tr>
+            <td style="padding:36px 32px 12px;">
+                <h1 style="margin:0 0 6px;font-size:22px;color:${BRAND_NAVY};font-weight:700;">Thank you, ${escapeHtml(data.full_name)}!</h1>
+                <p style="margin:0;font-size:15px;color:#5a6577;line-height:1.6;">
+                    Your driver registration application has been received. Our partner coordinator will review your details and contact you within 48 hours.
+                </p>
+            </td>
+        </tr>
+
+        <!-- Application Details Card -->
+        <tr>
+            <td style="padding:16px 32px 24px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8ecf1;border-radius:10px;overflow:hidden;">
+                    <tr>
+                        <td style="background:#f7f8fa;padding:14px 20px;border-bottom:1px solid #e8ecf1;">
+                            <p style="margin:0;font-size:12px;color:${BRAND_NAVY};text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">Your Application Details</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;width:40%;font-size:13px;color:#8b95a5;font-weight:500;">Name</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.full_name)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">City</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.city)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Vehicle</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.vehicle_model)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;font-size:13px;color:#8b95a5;font-weight:500;">Owns Vehicle</td>
+                                    <td style="padding:14px 20px;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${data.owns_vehicle ? 'Yes' : 'No'}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- What's Next -->
+        <tr>
+            <td style="padding:8px 32px 28px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8fa;border-radius:10px;">
+                    <tr>
+                        <td style="padding:20px 24px;">
+                            <p style="margin:0 0 12px;font-size:14px;color:${BRAND_NAVY};font-weight:700;">What happens next?</p>
+                            <p style="margin:0 0 8px;font-size:13px;color:#5a6577;line-height:1.7;">1. Our team reviews your application</p>
+                            <p style="margin:0 0 8px;font-size:13px;color:#5a6577;line-height:1.7;">2. We verify your documents and vehicle details</p>
+                            <p style="margin:0;font-size:13px;color:#5a6577;line-height:1.7;">3. You receive onboarding instructions and start driving</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Contact Bar -->
+        <tr>
+            <td style="background:${BRAND_NAVY};padding:24px 32px;text-align:center;">
+                <p style="margin:0 0 14px;font-size:13px;color:#a0b0c8;">Questions about your application?</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="padding:0 8px;">
+                            <a href="https://wa.me/${WHATSAPP_NUMBER}" style="display:inline-block;background:#25d366;color:#ffffff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;">WhatsApp</a>
+                        </td>
+                        <td style="padding:0 8px;">
+                            <a href="mailto:${CONTACT_EMAIL}" style="display:inline-block;background:${BRAND_GOLD};color:${BRAND_NAVY};padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;">Email Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    `);
+
+    return {
+        subject: 'Application Received | Haram Taxi Driver Partner',
+        html,
+    };
+}
+
+export function driverRegistrationAdminEmail(data: DriverRegistrationData): { subject: string; html: string } {
+    const checkMark = (val: boolean) => val ? '<span style="color:#059669;font-weight:700;">&#10003; Yes</span>' : '<span style="color:#dc2626;font-weight:700;">&#10007; No</span>';
+
+    const html = baseLayout(`
+        ${headerBlock('New Driver Application')}
+
+        <!-- Alert Banner -->
+        <tr>
+            <td style="padding:24px 32px 0;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%);border:1px solid ${BRAND_GOLD};border-radius:10px;">
+                    <tr>
+                        <td style="padding:16px 20px;text-align:center;">
+                            <p style="margin:0;font-size:15px;color:#7c6200;font-weight:700;">New driver registration &mdash; please review</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Driver Details -->
+        <tr>
+            <td style="padding:20px 32px 16px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8ecf1;border-radius:10px;overflow:hidden;">
+                    <tr>
+                        <td style="background:${BRAND_NAVY};padding:12px 20px;">
+                            <p style="margin:0;font-size:12px;color:${BRAND_GOLD};text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">Driver Details</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;width:35%;font-size:13px;color:#8b95a5;font-weight:500;">Name</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.full_name)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Phone</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.phone)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Email</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.email)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">City</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.city)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Vehicle</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.vehicle_model)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;font-size:13px;color:#8b95a5;font-weight:500;">Owns Vehicle</td>
+                                    <td style="padding:14px 20px;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${data.owns_vehicle ? 'Yes' : 'No'}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Requirements Checklist -->
+        <tr>
+            <td style="padding:0 32px 16px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8ecf1;border-radius:10px;overflow:hidden;">
+                    <tr>
+                        <td style="background:${BRAND_NAVY};padding:12px 20px;">
+                            <p style="margin:0;font-size:12px;color:${BRAND_GOLD};text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">Requirements Check</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Saudi License</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;text-align:right;">${checkMark(data.has_saudi_license)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Vehicle Condition (2018+)</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;text-align:right;">${checkMark(data.vehicle_condition_ok)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Languages</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;text-align:right;">${checkMark(data.speaks_languages)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;font-size:13px;color:#8b95a5;font-weight:500;">Background Check</td>
+                                    <td style="padding:14px 20px;font-size:14px;text-align:right;">${checkMark(data.background_check_agreed)}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Quick Actions -->
+        <tr>
+            <td style="background:${BRAND_NAVY};padding:24px 32px;text-align:center;">
+                <p style="margin:0 0 16px;font-size:13px;color:#a0b0c8;font-weight:500;">Quick Actions</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="padding:0 6px;">
+                            <a href="https://wa.me/${formatPhoneForWhatsApp(data.phone)}" style="display:inline-block;background:#25d366;color:#ffffff;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">WhatsApp</a>
+                        </td>
+                        <td style="padding:0 6px;">
+                            <a href="tel:${data.phone}" style="display:inline-block;background:#3b82f6;color:#ffffff;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">Call</a>
+                        </td>
+                        <td style="padding:0 6px;">
+                            <a href="mailto:${data.email}" style="display:inline-block;background:${BRAND_GOLD};color:${BRAND_NAVY};padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">Email</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    `);
+
+    return {
+        subject: `New Driver Application: ${data.full_name} - ${data.city}`,
+        html,
+    };
+}
+
+// ─── PARTNER INQUIRY EMAILS ─────────────────────────────────
+
+interface PartnerInquiryData {
+    company_name: string;
+    contact_person: string;
+    email: string;
+    phone: string;
+    business_type: string;
+    message: string;
+}
+
+const businessTypeLabels: Record<string, string> = {
+    'umrah-agency': 'Umrah / Hajj Agency',
+    'travel-agency': 'Travel Agency',
+    'hotel': 'Hotel / Hospitality',
+    'corporate': 'Corporate Travel',
+    'tour-operator': 'Tour Operator',
+    'other': 'Other',
+};
+
+export function partnerInquiryClientEmail(data: PartnerInquiryData): { subject: string; html: string } {
+    const html = baseLayout(`
+        ${headerBlock('Inquiry Received')}
+
+        <tr>
+            <td style="padding:36px 32px 12px;">
+                <h1 style="margin:0 0 6px;font-size:22px;color:${BRAND_NAVY};font-weight:700;">Thank you, ${escapeHtml(data.contact_person)}!</h1>
+                <p style="margin:0;font-size:15px;color:#5a6577;line-height:1.6;">
+                    We have received your partnership inquiry for <strong style="color:${BRAND_NAVY};">${escapeHtml(data.company_name)}</strong>. Our business development team will review your details and get back to you within 24 hours.
+                </p>
+            </td>
+        </tr>
+
+        <!-- Inquiry Details Card -->
+        <tr>
+            <td style="padding:16px 32px 24px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8ecf1;border-radius:10px;overflow:hidden;">
+                    <tr>
+                        <td style="background:#f7f8fa;padding:14px 20px;border-bottom:1px solid #e8ecf1;">
+                            <p style="margin:0;font-size:12px;color:${BRAND_NAVY};text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">Your Inquiry Details</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;width:40%;font-size:13px;color:#8b95a5;font-weight:500;">Company</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.company_name)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Business Type</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(businessTypeLabels[data.business_type] || data.business_type)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;font-size:13px;color:#8b95a5;font-weight:500;">Contact Person</td>
+                                    <td style="padding:14px 20px;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(data.contact_person)}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- What's Next -->
+        <tr>
+            <td style="padding:8px 32px 28px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8fa;border-radius:10px;">
+                    <tr>
+                        <td style="padding:20px 24px;">
+                            <p style="margin:0 0 12px;font-size:14px;color:${BRAND_NAVY};font-weight:700;">What happens next?</p>
+                            <p style="margin:0 0 8px;font-size:13px;color:#5a6577;line-height:1.7;">1. Our business team reviews your inquiry</p>
+                            <p style="margin:0 0 8px;font-size:13px;color:#5a6577;line-height:1.7;">2. A dedicated account manager will contact you</p>
+                            <p style="margin:0;font-size:13px;color:#5a6577;line-height:1.7;">3. We tailor a partnership plan for your business</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Contact Bar -->
+        <tr>
+            <td style="background:${BRAND_NAVY};padding:24px 32px;text-align:center;">
+                <p style="margin:0 0 14px;font-size:13px;color:#a0b0c8;">Need to reach us sooner?</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="padding:0 8px;">
+                            <a href="https://wa.me/${WHATSAPP_NUMBER}" style="display:inline-block;background:#25d366;color:#ffffff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;">WhatsApp</a>
+                        </td>
+                        <td style="padding:0 8px;">
+                            <a href="mailto:${CONTACT_EMAIL}" style="display:inline-block;background:${BRAND_GOLD};color:${BRAND_NAVY};padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;">Email Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    `);
+
+    return {
+        subject: 'Partnership Inquiry Received | Haram Taxi Service',
+        html,
+    };
+}
+
+export function partnerInquiryAdminEmail(data: PartnerInquiryData): { subject: string; html: string } {
+    const html = baseLayout(`
+        ${headerBlock('New B2B Partner Inquiry')}
+
+        <!-- Alert Banner -->
+        <tr>
+            <td style="padding:24px 32px 0;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%);border:1px solid ${BRAND_GOLD};border-radius:10px;">
+                    <tr>
+                        <td style="padding:16px 20px;text-align:center;">
+                            <p style="margin:0;font-size:15px;color:#7c6200;font-weight:700;">New B2B partnership inquiry &mdash; please follow up</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Company Details -->
+        <tr>
+            <td style="padding:20px 32px 16px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8ecf1;border-radius:10px;overflow:hidden;">
+                    <tr>
+                        <td style="background:${BRAND_NAVY};padding:12px 20px;">
+                            <p style="margin:0;font-size:12px;color:${BRAND_GOLD};text-transform:uppercase;letter-spacing:1.5px;font-weight:700;">Company Details</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;width:35%;font-size:13px;color:#8b95a5;font-weight:500;">Company</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.company_name)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Contact Person</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.contact_person)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Email</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.email)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:13px;color:#8b95a5;font-weight:500;">Phone</td>
+                                    <td style="padding:14px 20px;border-bottom:1px solid #f0f2f5;font-size:14px;color:${BRAND_NAVY};font-weight:700;text-align:right;">${escapeHtml(data.phone)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:14px 20px;font-size:13px;color:#8b95a5;font-weight:500;">Business Type</td>
+                                    <td style="padding:14px 20px;font-size:14px;color:${BRAND_NAVY};font-weight:600;text-align:right;">${escapeHtml(businessTypeLabels[data.business_type] || data.business_type)}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        ${data.message ? `
+        <!-- Message -->
+        <tr>
+            <td style="padding:0 32px 16px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8fa;border-radius:10px;border:1px solid #e8ecf1;">
+                    <tr>
+                        <td style="padding:16px 20px;">
+                            <p style="margin:0 0 6px;font-size:12px;color:#8b95a5;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Message</p>
+                            <p style="margin:0;font-size:14px;color:${BRAND_NAVY};line-height:1.6;">${escapeHtml(data.message)}</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        ` : ''}
+
+        <!-- Quick Actions -->
+        <tr>
+            <td style="background:${BRAND_NAVY};padding:24px 32px;text-align:center;">
+                <p style="margin:0 0 16px;font-size:13px;color:#a0b0c8;font-weight:500;">Quick Actions</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="padding:0 6px;">
+                            <a href="https://wa.me/${formatPhoneForWhatsApp(data.phone)}" style="display:inline-block;background:#25d366;color:#ffffff;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">WhatsApp</a>
+                        </td>
+                        <td style="padding:0 6px;">
+                            <a href="tel:${data.phone}" style="display:inline-block;background:#3b82f6;color:#ffffff;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">Call</a>
+                        </td>
+                        <td style="padding:0 6px;">
+                            <a href="mailto:${data.email}" style="display:inline-block;background:${BRAND_GOLD};color:${BRAND_NAVY};padding:12px 24px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;">Email</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    `);
+
+    return {
+        subject: `New B2B Inquiry: ${data.company_name} (${businessTypeLabels[data.business_type] || data.business_type})`,
+        html,
+    };
+}
