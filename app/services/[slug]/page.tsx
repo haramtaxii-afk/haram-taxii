@@ -110,7 +110,7 @@ export default async function ServicePage({ params }: Props) {
                                 </Button>
                             </Link>
                             <a href="https://wa.me/923132222436?text=As-salamu%20alaykum%2C%20I%20want%20to%20get%20a%20quotation%20for%20this%20service." target="_blank" rel="noopener noreferrer">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-[#25D366] hover:border-[#25D366] hover:text-white px-8 py-6 text-lg transition-colors">
+                                <Button size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white border-none px-8 py-6 text-lg transition-colors shadow-lg">
                                     <MessageCircle className="w-5 h-5 mr-2 fill-current" /> Get Quotation Now
                                 </Button>
                             </a>
