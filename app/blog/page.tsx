@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
     return (
         <div className="bg-white min-h-screen">
-            <div className="bg-teal-600 text-white py-20 px-4 text-center">
+            <div className="bg-teal-600 text-white pt-32 pb-12 md:pt-40 md:pb-20 px-4 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">Travel Insights & Guides</h1>
                 <p className="text-xl opacity-90 max-w-2xl mx-auto">Expert advice for your spiritual journey in Saudi Arabia.</p>
             </div>
