@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Car, ChevronDown, MessageCircle } from 'lucide-react';
+import { Menu, X, Car, ChevronDown, MessageCircle, Handshake } from 'lucide-react';
 import Image from 'next/image';
 import HeaderDate from '@/components/HeaderDate';
 
@@ -11,6 +11,7 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [fleetDropdownOpen, setFleetDropdownOpen] = useState(false);
     const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false);
+    const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
 
     const fleetItems = [
         { name: 'GMC Yukon', href: '/fleet/gmc-yukon' },
@@ -138,6 +139,33 @@ export default function Navbar() {
                             )}
                         </div>
 
+                        {/* Partners Dropdown */}
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setPartnersDropdownOpen(true)}
+                            onMouseLeave={() => setPartnersDropdownOpen(false)}
+                        >
+                            <button
+                                className="flex items-center gap-1 text-gray-600 hover:text-brand-teal font-medium transition-colors py-2 text-sm uppercase tracking-wide"
+                                aria-expanded={partnersDropdownOpen}
+                                aria-haspopup="true"
+                            >
+                                Partners
+                                <ChevronDown className={`w-4 h-4 transition-transform ${partnersDropdownOpen ? 'rotate-180' : ''}`} />
+                            </button>
+                            {partnersDropdownOpen && (
+                                <div className="absolute top-full left-0 pt-0 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-3 animate-in fade-in slide-in-from-top-2 duration-200 ring-1 ring-gray-900/5">
+                                    <div className="absolute -top-1 left-8 w-3 h-3 bg-white rotate-45 border-t border-l border-gray-100"></div>
+                                    <Link href="/partners" className="block px-5 py-3 text-sm text-gray-900 hover:bg-brand-teal-pale/50 hover:text-brand-teal font-bold border-b border-gray-50">
+                                        Partner with Us
+                                    </Link>
+                                    <Link href="/partners/driver-registration" className="block px-5 py-2.5 text-sm text-gray-600 hover:bg-brand-teal-pale/30 hover:text-brand-teal transition-colors">
+                                        Driver Registration
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
+
                         <Link href="/about" className="text-gray-600 hover:text-brand-teal font-medium transition-colors text-sm uppercase tracking-wide">
                             About
                         </Link>
@@ -230,6 +258,19 @@ export default function Navbar() {
                                         {item.name}
                                     </Link>
                                 ))}
+                            </div>
+                        </div>
+
+                        {/* Partners Section */}
+                        <div className="bg-gray-50/50 rounded-xl p-2">
+                            <div className="px-2 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider">Partners</div>
+                            <div className="space-y-1">
+                                <Link href="/partners" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-white hover:text-brand-teal rounded-lg hover:shadow-sm font-medium">
+                                    Partner with Us
+                                </Link>
+                                <Link href="/partners/driver-registration" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-white hover:text-brand-teal rounded-lg transition-colors pl-6">
+                                    Driver Registration
+                                </Link>
                             </div>
                         </div>
 

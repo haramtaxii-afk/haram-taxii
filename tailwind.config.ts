@@ -24,6 +24,7 @@ const config: Config = {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
         // 10% display — Playfair Display (elegant serif for H1/H2 identity)
         display: ['var(--font-playfair)', 'Georgia', 'serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
