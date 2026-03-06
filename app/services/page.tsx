@@ -14,7 +14,7 @@ export default function ServicesIndexPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Hero */}
-            <div className="bg-brand-teal text-white py-12 md:py-20 px-4 text-center">
+            <div className="bg-brand-teal text-white pt-32 pb-12 md:pt-40 md:pb-20 px-4 text-center">
                 <h1 className="text-fluid-h1 font-bold mb-4 font-display">Our Services</h1>
                 <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">Reliable, comfortable, and affordable transportation solutions for your spiritual journey.</p>
             </div>
