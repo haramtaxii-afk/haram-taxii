@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: 'Toyota Coaster Taxi in Saudi Arabia | 17-Seater Bus Rental - Haram Taxi',
     description: 'Book Toyota Coaster 17-seater mini bus taxi in Saudi Arabia. Perfect for large groups, corporate events, tours in Makkah, Madinah.',
     keywords: ['Toyota Coaster taxi', 'mini bus Saudi Arabia', '17 seater bus', 'large group taxi', 'corporate bus'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/fleet/toyota-coaster',
+    },
     openGraph: {
         title: 'Toyota Coaster Mini Bus Taxi | 17-Seater',
         description: 'Book Toyota Coaster for large group travel and corporate events.',

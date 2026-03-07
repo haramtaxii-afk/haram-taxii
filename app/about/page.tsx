@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     title: 'About Us | Professional Taxi Service in Saudi Arabia - Haram Taxi',
     description: 'Learn about Haram Taxi Service - professional taxi transportation in Makkah, Madinah, Jeddah. Serving travelers with reliable, safe, and comfortable rides across Saudi Arabia since 2020.',
     keywords: ['about Haram Taxi', 'taxi company Saudi Arabia', 'professional taxi service', 'Makkah taxi company', 'Madinah transportation', 'reliable taxi Saudi Arabia'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/about',
+    },
     openGraph: {
         title: 'About Us | Professional Taxi Service in Saudi Arabia',
         description: 'Professional taxi service in Makkah, Madinah, Jeddah. Reliable transportation across Saudi Arabia.',

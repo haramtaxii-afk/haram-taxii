@@ -9,6 +9,9 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = {
     title: 'Taxi Prices & Rates | Haram Taxi Service',
     description: 'Transparent pricing for Umrah taxi services. Makkah to Madinah, Jeddah Airport transfers, and Ziyarat tours. Fixed rates, no hidden fees.',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/pricing',
+    },
 };
 
 export default function PricingPage() {

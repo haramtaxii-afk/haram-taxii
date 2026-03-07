@@ -170,20 +170,7 @@ export const routesData: RouteData[] = [
         ],
         faqs: []
     },
-    {
-        slug: "tabuk-to-jordan-border",
-        title: "Tabuk to Jordan Border Taxi Transfer",
-        description: "Taxi service from Tabuk to Halat Ammar or Haql border crossings. Reliable border transfer.",
-        h1: "Tabuk to Jordan Border Transfer",
-        distance: "100-200 km",
-        duration: "1-2 hours",
-        content: "Crossing into Jordan? We provide transfers from Tabuk city/airport to the Halat Ammar border or Al Durra border (Haql).",
-        pricing: [
-            { vehicle: "Toyota Camry", price: "400 SR", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "GMC Yukon", price: "700 SR", capacity: "7 Pax", luggage: "5 Bags" },
-        ],
-        faqs: []
-    },
+
     {
         slug: "alula-to-madinah",
         title: "AlUla to Madinah Taxi Transfer",
@@ -198,20 +185,7 @@ export const routesData: RouteData[] = [
         ],
         faqs: []
     },
-    {
-        slug: "najran-to-yemen-border",
-        title: "Najran to Yemen Border (Wadeeah) Taxi",
-        description: "Transport from Najran to Al Wadeeah border crossing.",
-        h1: "Najran to Yemen Border Taxi",
-        distance: "350 km",
-        duration: "4 hours",
-        content: "Specialized transfer service to the Al Wadeeah border crossing into Yemen.",
-        pricing: [
-            { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "Myundi Staria", price: "800 SR", capacity: "7 Pax", luggage: "5 Bags" },
-        ],
-        faqs: []
-    },
+
     {
         slug: "hafr-to-kuwait-border",
         title: "Hafr Al Batin to Kuwait Border Taxi",
@@ -331,19 +305,7 @@ export const routesData: RouteData[] = [
         ],
         faqs: []
     },
-    {
-        slug: "arar-to-iraq-border",
-        title: "Arar to Iraq Border (Jadidah) Taxi",
-        description: "Transfer from Arar to the Iraq border (Jadidah Arar).",
-        h1: "Arar to Iraq Border Transfer",
-        distance: "60 km",
-        duration: "45 minutes",
-        content: "Reliable transfer to the border crossing.",
-        pricing: [
-            { vehicle: "Toyota Camry", price: "200 SR", capacity: "4 Pax", luggage: "2 Bags" },
-        ],
-        faqs: []
-    },
+
     {
         slug: "qassim-to-riyadh",
         title: "Qassim to Riyadh Taxi Transfer",

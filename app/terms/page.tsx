@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | Haram Taxi Service',
     description: 'Terms and conditions for using Haram Taxi Service. Learn about booking policies, cancellations, liability, and service agreements.',
     robots: 'index, follow',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/terms',
+    },
 };
 
 export default function TermsPage() {

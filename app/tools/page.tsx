@@ -5,6 +5,9 @@ import { Calculator, Clock, Calendar, Navigation, Map, ArrowRight } from 'lucide
 export const metadata: Metadata = {
     title: 'Travel Tools & Resources | Taxi Fare, Prayer Times, Hijri Date - Haram Taxi',
     description: 'Free utility tools for pilgrims and travelers in Saudi Arabia. Calculate taxi fares, check prayer times, convert Hijri dates, and plan your Umrah trip.',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools',
+    },
 };
 
 const TOOLS = [

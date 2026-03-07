@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Terms and Conditions | Umrah Taxi',
     description: 'Read the terms and conditions for using Umrah Taxi. Understand your rights and responsibilities when booking our taxi and chauffeur services.',
     keywords: ['terms and conditions', 'service agreement', 'user terms', 'booking terms'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/terms-conditions',
+    },
 };
 
 export default function TermsConditionsPage() {

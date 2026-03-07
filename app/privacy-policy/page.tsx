@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Umrah Taxi',
     description: 'Learn how Umrah Taxi collects, uses, and protects your personal information. Your privacy and data security are our top priorities.',
     keywords: ['privacy policy', 'data protection', 'personal information', 'GDPR compliance'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/privacy-policy',
+    },
 };
 
 export default function PrivacyPolicyPage() {

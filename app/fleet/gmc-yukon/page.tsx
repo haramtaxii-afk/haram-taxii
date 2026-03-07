@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: 'GMC Yukon Taxi in Saudi Arabia | Luxury SUV Rental - Haram Taxi',
     description: 'Book GMC Yukon luxury SUV taxi in Saudi Arabia. Premium 7-seater for VIP transport in Makkah, Madinah, Jeddah. Professional drivers, fixed rates.',
     keywords: ['GMC Yukon taxi', 'luxury SUV rental Saudi Arabia', 'VIP taxi Makkah', 'GMC Yukon Madinah', '7 seater taxi'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/fleet/gmc-yukon',
+    },
     openGraph: {
         title: 'GMC Yukon Luxury Taxi | Premium SUV Rental',
         description: 'Book GMC Yukon luxury SUV for VIP transport in Saudi Arabia.',

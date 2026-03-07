@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: `Prayer Times ${city} | Today's Salah Time - Haram Taxi`,
         description: `Get accurate prayer times (Salah time) for ${city} today. Fajr, Dhuhr, Asr, Maghrib, and Isha timings provided by Haram Taxi Service.`,
+        alternates: {
+            canonical: `https://www.haramtaxii.com/tools/prayer-times/${params.city}`,
+        },
     };
 }
 

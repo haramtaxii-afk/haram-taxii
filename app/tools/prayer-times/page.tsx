@@ -7,6 +7,9 @@ import { MapPin, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
     title: 'Prayer Times Saudi Arabia | Makkah, Madinah, Jeddah - Haram Taxi',
     description: 'Get accurate daily prayer times for all major cities in Saudi Arabia. Fajr, Dhuhr, Asr, Maghrib, and Isha timings for Makkah, Madinah, Jeddah, and more.',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools/prayer-times',
+    },
 };
 
 const CITIES = [

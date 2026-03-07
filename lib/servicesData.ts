@@ -1019,48 +1019,13 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "From Al Ahsa", price: "400 SAR" }, { title: "From Khobar", price: "500 SAR" }],
         faqs: []
     },
-    {
-        slug: "jordan-border-taxi",
-        title: "Jordan Border Taxi",
-        description: "Transfer to Saudi-Jordan border crossings.",
-        content: "Transport to Halat Ammar, Al Durra (Haql), and Al Haditha border crossings for travelers heading to Jordan.",
-        features: ["Multiple Crossings", "Tabuk Area", "Document Help", "24/7"],
-        pricing: [{ title: "From Tabuk", price: "400 SAR" }],
-        faqs: []
-    },
-    {
-        slug: "jordan-exit-taxi",
-        title: "Jordan Exit Taxi",
-        description: "Taxi for travelers exiting to Jordan.",
-        content: "Complete exit transfer service to Jordan borders. We handle the route while you focus on your documents.",
-        features: ["Exit Support", "Border Knowledge", "Reliable", "Comfortable"],
-        pricing: [{ title: "Transfer", price: "400 SAR" }],
-        faqs: []
-    },
-    {
-        slug: "yemen-border-taxi",
-        title: "Yemen Border Taxi",
-        description: "Transfer to Saudi-Yemen border at Al Tuwal and Wadeeah.",
-        content: "Transport to Yemen border crossings from Najran, Jazan, and surrounding areas.",
-        features: ["Al Tuwal", "Wadeeah", "Border Expert", "Safe"],
-        pricing: [{ title: "From Najran", price: "600 SAR" }, { title: "From Jazan", price: "400 SAR" }],
-        faqs: []
-    },
-    {
-        slug: "wadeeah-border-taxi",
-        title: "Wadeeah Border Taxi",
-        description: "Transfer to Al Wadeeah border crossing (Yemen).",
-        content: "Direct taxi service to the Al Wadeeah border crossing from Najran and Sharurah.",
-        features: ["Wadeeah Crossing", "Najran Base", "Reliable", "Safe"],
-        pricing: [{ title: "From Najran", price: "600 SAR" }],
-        faqs: []
-    },
+
     {
         slug: "customs-taxi",
         title: "Customs & Border Taxi",
         description: "Specialized border crossing transport service.",
-        content: "Expert transport to all Saudi border crossings. Our drivers know the procedures and best times to cross.",
-        features: ["All Borders", "Procedure Knowledge", "Wait Service", "Return"],
+        content: "Expert transport to authorized Saudi border crossings (UAE, Qatar, Kuwait, Bahrain). Our drivers know the procedures and best times to cross.",
+        features: ["GCC Borders", "Procedure Knowledge", "Wait Service", "Return"],
         pricing: [{ title: "Transfer", price: "From 300 SAR" }],
         faqs: []
     },
@@ -1068,20 +1033,12 @@ export const servicesData: ServiceData[] = [
         slug: "visa-run-taxi",
         title: "Visa Run Taxi Service",
         description: "Quick border run for visa renewal purposes.",
-        content: "Need to exit and re-enter Saudi Arabia for visa purposes? We provide efficient border run services to the nearest crossing.",
-        features: ["Fast Service", "Border Knowledge", "Wait & Return", "Multiple Borders"],
+        content: "Need to exit and re-enter Saudi Arabia for visa purposes? We provide efficient border run services to authorized crossings for UAE, Qatar, Kuwait, and Bahrain.",
+        features: ["Fast Service", "Border Knowledge", "Wait & Return", "GCC Borders"],
         pricing: [{ title: "Visa Run", price: "From 500 SAR" }],
         faqs: []
     },
-    {
-        slug: "qurayyat-to-jordan-border",
-        title: "Qurayyat to Jordan Border Taxi",
-        description: "Transfer from Qurayyat to Al Haditha Jordan border.",
-        content: "Short transfer from Qurayyat city to the Al Haditha border crossing into Jordan.",
-        features: ["Short Distance", "Border Access", "Fast", "Reliable"],
-        pricing: [{ title: "Border Transfer", price: "150 SAR" }],
-        faqs: []
-    },
+
     // ===== Tourism & Special Services =====
     {
         slug: "desert-safari-taxi",
@@ -1332,8 +1289,8 @@ export const servicesData: ServiceData[] = [
         slug: "northern-borders-taxi",
         title: "Northern Borders Region Taxi",
         description: "Taxi service across the Northern Borders region.",
-        content: "Serving Arar, Rafha, and Turaif in the Northern Borders region. Intercity and border crossing services.",
-        features: ["Arar", "Rafha", "Turaif", "Border Access"],
+        content: "Serving Arar, Rafha, and Turaif in the Northern Borders region. Specialized in intercity transfers and airport pickups.",
+        features: ["Arar", "Rafha", "Turaif", "City Transfers"],
         pricing: [{ title: "Intercity", price: "From 200 SAR" }],
         faqs: []
     },

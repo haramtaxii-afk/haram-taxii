@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     title: 'Umrah Trip Cost Estimator | Taxi Budget Planner - Haram Taxi',
     description: 'Plan your Umrah transportation budget. Estimate taxi costs for airport transfers, Makkah-Madinah travel, and Ziyarat tours for individuals and groups.',
     keywords: ['Umrah cost estimator', 'Umrah transport budget', 'taxi cost Makkah Madinah', 'Umrah trip planner'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools/umrah-trip-planner',
+    },
 };
 
 export default function UmrahPlannerPage() {

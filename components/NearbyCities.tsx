@@ -102,13 +102,13 @@ export default function NearbyCities({ currentCity }: NearbyCitiesProps) {
         ],
         'arar': [
             { name: 'Sakaka', slug: 'al-jouf', distance: '150km', description: 'Nearby northern city' },
-            { name: 'Iraq Border', slug: 'arar', distance: '50km', description: 'Jadeed Arar Crossing' },
+            { name: 'Rafha', slug: 'rafha', distance: '280km', description: 'Northern province connection' },
             { name: 'Turaif', slug: 'turaif-taxi', distance: '240km', description: 'Phosphate mining hub' }
         ],
         'najran': [
             { name: 'Abha', slug: 'abha', distance: '250km', description: 'Asir region connection' },
             { name: 'Sharurah', slug: 'sharurah-taxi', distance: '300km', description: 'Desert quarter city' },
-            { name: 'Yemen Border', slug: 'najran', distance: '350km', description: 'Wuday\'ah Crossing' }
+            { name: 'Habuna', slug: 'najran', distance: '100km', description: 'Regional agricultural hub' }
         ],
         'al-jouf': [
             { name: 'Arar', slug: 'arar', distance: '150km', description: 'Northern borders capital' },
@@ -131,7 +131,7 @@ export default function NearbyCities({ currentCity }: NearbyCitiesProps) {
             { name: 'Jubail', slug: 'jubail', distance: '100km', description: 'Industrial city connection' }
         ],
         'qurayyat': [
-            { name: 'Al Haditha (Jordan)', slug: 'qurayyat', distance: '30km', description: 'Jordan border crossing' },
+            { name: 'Sakaka', slug: 'al-jouf', distance: '350km', description: 'Administrative hub' },
             { name: 'Turaif', slug: 'turaif-taxi', distance: '150km', description: 'Northern mining city' },
             { name: 'Tabuk', slug: 'tabuk', distance: '350km', description: 'Regional hub connection' }
         ],
@@ -142,7 +142,7 @@ export default function NearbyCities({ currentCity }: NearbyCitiesProps) {
         ],
         'turaif': [
             { name: 'Arar', slug: 'arar', distance: '240km', description: 'Northern borders capital' },
-            { name: 'Qurayyat', slug: 'qurayyat', distance: '150km', description: 'Jordan border access' },
+            { name: 'Qurayyat', slug: 'qurayyat', distance: '150km', description: 'Regional city access' },
             { name: 'Tabuk', slug: 'tabuk', distance: '400km', description: 'Northwest hub' }
         ],
         'bisha': [
@@ -246,12 +246,12 @@ export default function NearbyCities({ currentCity }: NearbyCitiesProps) {
             { name: 'Najran', slug: 'najran', distance: '280km', description: 'Border city' }
         ],
         'al-haditha': [
-            { name: 'Qurayyat', slug: 'qurayyat', distance: '30km', description: 'City center' },
+            { name: 'Qurayyat', slug: 'qurayyat', distance: '30km', description: 'City center access' },
             { name: 'Tabuk', slug: 'tabuk', distance: '300km', description: 'Regional hub' },
             { name: 'Sakaka', slug: 'al-jouf', distance: '350km', description: 'Administrative city' }
         ],
         'halat-mmar': [
-            { name: 'Tabuk', slug: 'tabuk', distance: '100km', description: 'Nearest airport' },
+            { name: 'Tabuk', slug: 'tabuk', distance: '100km', description: 'Nearest regional airport' },
             { name: 'Duba', slug: 'duba', distance: '200km', description: 'Red Sea port' },
             { name: 'Al Ula', slug: 'al-ula', distance: '350km', description: 'Heritage city' }
         ],

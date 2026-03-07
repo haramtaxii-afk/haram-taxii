@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     title: 'Gallery | Umrah Taxi - Our Fleet & Holy Sites',
     description: 'View our premium fleet of vehicles and services for Umrah pilgrims. Browse photos of GMC Yukons, Hiace vans, and our services in Makkah and Madinah.',
     keywords: ['umrah taxi gallery', 'fleet photos', 'GMC Yukon Makkah', 'Hiace Madinah', 'ziyarat photos'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/gallery',
+    },
 };
 
 export default function GalleryPage() {

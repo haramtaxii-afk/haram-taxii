@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Taxi Fare Calculator Saudi Arabia | Estimates for Makkah, Madinah - Haram Taxi',
     description: 'Calculate taxi fares instantly for Jeddah to Makkah, Madinah, and other cities. Get accurate price estimates for Sedan, GMC Yukon, and Hiace based on current market rates.',
     keywords: ['taxi fare calculator Saudi Arabia', 'Jeddah to Makkah taxi price', 'Madinah taxi rates', 'taxi cost calculator', 'Haram taxi prices'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools/taxi-fare-calculator',
+    },
 };
 
 export default function FareCalculatorPage() {

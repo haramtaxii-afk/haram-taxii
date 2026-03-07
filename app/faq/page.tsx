@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     title: 'FAQs | Umrah Taxi - Common Questions',
     description: 'Find answers to frequently asked questions about booking Umrah taxi, payments, Ziyarat tours, and airport transfers.',
     keywords: ['umrah taxi FAQ', 'booking help', 'payment questions', 'ziyarat faq', 'airport transfer FAQ'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/faq',
+    },
 };
 
 export default function FAQPage() {

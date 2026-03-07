@@ -1,61 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-
-interface RelatedVehicle {
-    name: string;
-    slug: string;
-    description: string;
-    image: string;
-}
+import { fleetData } from '@/lib/fleetData';
 
 interface RelatedVehiclesProps {
     currentVehicle: string;
 }
 
 export default function RelatedVehicles({ currentVehicle }: RelatedVehiclesProps) {
-    const allVehicles: RelatedVehicle[] = [
-        {
-            name: 'GMC Yukon',
-            slug: 'gmc-yukon',
-            description: 'Luxury 7-seater SUV for VIP travel',
-            image: '/gmc-yukon-xl-taxi.webp'
-        },
-        {
-            name: 'Toyota Camry',
-            slug: 'toyota-camry',
-            description: 'Comfortable 4-seater sedan for business',
-            image: '/toyota-camry-taxi-sedan.webp'
-        },
-        {
-            name: 'Hyundai Staria',
-            slug: 'hyundai-staria',
-            description: 'Modern 7-seater family van',
-            image: '/hyundai-staria-family-taxi.webp'
-        },
-        {
-            name: 'Toyota Hiace',
-            slug: 'toyota-hiace',
-            description: 'Spacious 11-seater for groups',
-            image: '/toyota-hiace-commuter-van.webp'
-        },
-        {
-            name: 'Toyota Coaster',
-            slug: 'toyota-coaster',
-            description: 'Professional 17-seater mini bus',
-            image: '/toyota-coaster-minibus.webp'
-        },
-        {
-            name: 'Hyundai Starex',
-            slug: 'hyundai-starex',
-            description: 'Reliable 7-seater family van',
-            image: '/hyundai-starex-family-van.webp'
-        }
-    ];
-
     // Filter out current vehicle and get 3 related ones
-    const relatedVehicles = allVehicles
+    const relatedVehicles = fleetData
         .filter(vehicle => vehicle.slug !== currentVehicle)
+        .sort(() => 0.5 - Math.random()) // Shuffle for variety
         .slice(0, 3);
 
     return (

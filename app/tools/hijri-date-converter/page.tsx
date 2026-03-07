@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     title: 'Hijri Date Converter | Gregorian to Islamic Date - Haram Taxi',
     description: 'Free tool to convert Gregorian dates to Hijri (Islamic) dates and vice versa. Accurate Umm Al-Qura calendar for Umrah and Hajj planning.',
     keywords: ['Hijri date converter', 'Islamic date today', 'Gregorian to Hijri', 'Umrah date converter', 'Saudi Arabia date'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools/hijri-date-converter',
+    },
 };
 
 export default function HijriConverterPage() {

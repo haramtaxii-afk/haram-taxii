@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     title: 'Book Taxi Online in Saudi Arabia | Instant Booking - Haram Taxi',
     description: 'Book taxi online in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, fixed rates. Available 24/7. Book now!',
     keywords: ['book taxi online Saudi Arabia', 'online taxi booking Makkah', 'book taxi Madinah', 'instant taxi booking', 'taxi reservation Saudi Arabia'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/booking',
+    },
     openGraph: {
         title: 'Book Taxi Online in Saudi Arabia | Instant Booking',
         description: 'Book taxi online with instant confirmation. Makkah, Madinah, Jeddah. Available 24/7.',

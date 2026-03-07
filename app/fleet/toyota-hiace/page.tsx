@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: 'Toyota Hiace Taxi in Saudi Arabia | 11-Seater Van Rental - Haram Taxi',
     description: 'Book Toyota Hiace 11-seater van taxi in Saudi Arabia. Perfect for group travel in Makkah, Madinah, Jeddah. Spacious and reliable.',
     keywords: ['Toyota Hiace taxi', 'group van Saudi Arabia', '11 seater taxi', 'group travel Makkah', 'tour van'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/fleet/toyota-hiace',
+    },
     openGraph: {
         title: 'Toyota Hiace Group Van Taxi | 11-Seater',
         description: 'Book Toyota Hiace for group travel and tours in Saudi Arabia.',

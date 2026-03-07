@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     title: 'Distance Calculator Saudi Arabia | Makkah to Madinah Travel Time - Haram Taxi',
     description: 'Calculate driving distance and estimated taxi travel time between Makkah, Madinah, Jeddah Airport, and Taif. Plan your Umrah journey efficiently.',
     keywords: ['distance calculator Saudi Arabia', 'Makkah to Madinah distance', 'Jeddah to Makkah travel time', 'taxi travel time Saudi Arabia'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/tools/distance-calculator',
+    },
 };
 
 export default function DistancePage() {

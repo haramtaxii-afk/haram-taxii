@@ -4,87 +4,24 @@ import type { Metadata } from 'next';
 import { Users, Briefcase, CheckCircle2, ArrowRight, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+import { fleetData } from '@/lib/fleetData';
+
 export const metadata: Metadata = {
-    title: 'Taxi Fleet in Saudi Arabia | GMC Yukon, Camry, Vans - Haram Taxi',
-    description: 'View our taxi fleet in Saudi Arabia. Luxury SUVs, sedans, family vans, and buses. GMC Yukon, Toyota Camry, Hyundai Staria. Book your vehicle now!',
-    keywords: ['taxi fleet Saudi Arabia', 'GMC Yukon taxi', 'Toyota Camry taxi', 'family van taxi', 'luxury SUV taxi Makkah', 'group taxi Saudi Arabia'],
+    title: 'Taxi Fleet in Saudi Arabia | VIP Elite, GMC Yukon, Mercedes - Haram Taxi',
+    description: 'Explore our premium taxi fleet: Mercedes S-Class, Cadillac Escalade, GMC Yukon, and luxury vans. Professional transport across Makkah, Madinah, Jeddah.',
+    keywords: ['VIP taxi Saudi Arabia', 'Mercedes S-Class taxi', 'Cadillac Escalade rental', 'Makkah luxury fleet', 'GMC Yukon Denali'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/fleet',
+    },
     openGraph: {
-        title: 'Taxi Fleet in Saudi Arabia | Premium Vehicles',
-        description: 'Luxury SUVs, sedans, and vans for taxi service in Saudi Arabia. Book now!',
+        title: 'Premium Taxi Fleet in Saudi Arabia | VIP & Luxury Vehicles',
+        description: 'Elite Mercedes S-Class, Cadillac Escalade, and GMC Yukon. The finest luxury transport in Saudi Arabia.',
         url: 'https://www.haramtaxii.com/fleet',
         type: 'website',
     },
 };
 
 export default function FleetPage() {
-    const fleet = [
-        {
-            name: "GMC Yukon XL",
-            image: "/gmc-yukon-xl-taxi.webp",
-            passengers: 7,
-            luggage: 5,
-            category: "Luxury SUV",
-            features: ["Luxury Interior", "Extra Legroom", "VIP Experience", "Premium Sound"],
-            description: "Perfect for VIP travel and families seeking ultimate comfort",
-            href: "/fleet/gmc-yukon",
-            alt: "GMC Yukon XL luxury SUV taxi for VIP travel in Saudi Arabia"
-        },
-        {
-            name: "Toyota Camry",
-            image: "/toyota-camry-taxi-sedan.webp",
-            passengers: 4,
-            luggage: 2,
-            category: "Sedan",
-            features: ["Comfortable", "AC", "Economic", "City Travel"],
-            description: "Ideal for business trips and city transportation",
-            href: "/fleet/toyota-camry",
-            alt: "Toyota Camry reliability taxi sedan for city trips in Jeddah"
-        },
-        {
-            name: "Hyundai Staria",
-            image: "/hyundai-staria-family-taxi.webp",
-            passengers: 7,
-            luggage: 4,
-            category: "Family Van",
-            features: ["Modern Design", "Spacious", "Family Friendly", "USB Charging"],
-            description: "Modern van perfect for families with children",
-            href: "/fleet/hyundai-staria",
-            alt: "Hyundai Staria modern family van taxi for Umrah pilgrimage"
-        },
-        {
-            name: "Toyota Hiace",
-            image: "/toyota-hiace-commuter-van.webp",
-            passengers: 11,
-            luggage: 16,
-            category: "Group Van",
-            features: ["Group Travel", "Spacious", "Reliable", "Long Distance"],
-            description: "Best choice for medium-sized groups and tours",
-            href: "/fleet/toyota-hiace",
-            alt: "Toyota Hiace commuter van for group transport in Makkah"
-        },
-        {
-            name: "Toyota Coaster",
-            image: "/toyota-coaster-minibus.webp",
-            passengers: 17,
-            luggage: 20,
-            category: "Mini Bus",
-            features: ["Large Groups", "Tour Bus", "Corporate", "Long Distance"],
-            description: "Perfect for large groups and corporate events",
-            href: "/fleet/toyota-coaster",
-            alt: "Toyota Coaster minibus for corporate and group events in Riyadh"
-        },
-        {
-            name: "Hyundai Starex",
-            image: "/hyundai-starex-family-van.webp",
-            passengers: 7,
-            luggage: 10,
-            category: "Van",
-            features: ["Family Friendly", "Comfortable", "Reliable", "Airport Transfer"],
-            description: "Reliable van for airport transfers and family trips",
-            href: "/fleet/hyundai-starex",
-            alt: "Hyundai Starex family van for airport transfers in Madinah"
-        }
-    ];
 
     return (
         <div className="bg-white min-h-screen">
@@ -120,20 +57,20 @@ export default function FleetPage() {
                     {/* Quick Stats */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                         <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-                            <div className="text-3xl font-bold text-teal-500 mb-2">6</div>
+                            <div className="text-3xl font-bold text-teal-500 mb-2">{fleetData.length}</div>
                             <div className="text-sm text-gray-600">Vehicle Types</div>
                         </div>
                         <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-                            <div className="text-3xl font-bold text-teal-500 mb-2">2024</div>
-                            <div className="text-sm text-gray-600">Latest Models</div>
+                            <div className="text-3xl font-bold text-teal-500 mb-2">Elite</div>
+                            <div className="text-sm text-gray-600">VIP Selection</div>
                         </div>
                         <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                             <div className="text-3xl font-bold text-teal-500 mb-2">100%</div>
-                            <div className="text-sm text-gray-600">Clean & Safe</div>
+                            <div className="text-sm text-gray-600">Premium Standards</div>
                         </div>
                         <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                             <div className="text-3xl font-bold text-teal-500 mb-2">24/7</div>
-                            <div className="text-sm text-gray-600">Available</div>
+                            <div className="text-sm text-gray-600">Chauffeur Service</div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +80,7 @@ export default function FleetPage() {
             <section className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {fleet.map((vehicle, index) => (
+                        {fleetData.map((vehicle, index) => (
                             <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 {/* Image */}
                                 <div className="relative h-64 overflow-hidden">
@@ -194,7 +131,7 @@ export default function FleetPage() {
 
                                     {/* CTA */}
                                     <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
-                                        <Link href={vehicle.href}>
+                                        <Link href={`/fleet/${vehicle.slug}`}>
                                             View {vehicle.name} Details
                                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                         </Link>

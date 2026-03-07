@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     title: 'Taxi Service Locations in Saudi Arabia | Makkah, Madinah, Jeddah, Taif - Haram Taxi',
     description: 'Professional taxi service in Makkah, Madinah, Jeddah, and Taif. Book reliable transportation 24/7.',
     keywords: ['taxi service Saudi Arabia', 'taxi Makkah', 'taxi Madinah', 'taxi Jeddah', 'taxi Taif', 'Umrah taxi service', 'Makkah to Madinah taxi', 'Jeddah to Makkah taxi', 'Saudi private taxi'],
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/locations',
+    },
     openGraph: {
         title: 'Taxi Service Locations in Saudi Arabia',
         description: 'Professional taxi service in Makkah, Madinah, Jeddah, and Taif. Book now!',
@@ -141,17 +144,17 @@ export default function LocationsPage() {
         {
             name: 'Arar',
             slug: 'arar',
-            description: 'Iraq Border (Jadeed Arar) & Northern Borders',
+            description: 'Northern Borders Hub & Regional Transfers',
             image: '/arar-northern-borders.webp',
-            services: ['Iraq Border', 'Airport Taxi', 'Business Chauffeur'],
+            services: ['Airport Taxi', 'Intercity Transfer', 'Business Chauffeur'],
             popular: false,
         },
         {
             name: 'Najran',
             slug: 'najran',
-            description: 'Yemen Border (Wuday\'ah) & Heritage Tours',
+            description: 'Ancient Al-Ukhdood & Heritage Tours',
             image: '/najran-emara-palace.webp',
-            services: ['Yemen Border', 'Airport Taxi', 'Al-Ukhdood Tour'],
+            services: ['Airport Taxi', 'Heritage Tour', 'Al-Ukhdood Visit'],
             popular: false,
         },
         {
@@ -189,9 +192,9 @@ export default function LocationsPage() {
         {
             name: 'Al Qurayyat',
             slug: 'qurayyat',
-            description: 'Jordan Border (Al Haditha) & Airport',
+            description: 'Northern Business Hub & Airport Transfers',
             image: '/qurayyat-border.webp',
-            services: ['Jordan Border', 'Airport Taxi', 'Business Ride'],
+            services: ['Airport Taxi', 'Intercity Travel', 'Business Ride'],
             popular: false,
         },
         {
@@ -237,9 +240,9 @@ export default function LocationsPage() {
         {
             name: 'Sharurah',
             slug: 'sharurah',
-            description: 'Yemen Border & Empty Quarter',
+            description: 'Gateway to the Great Empty Quarter',
             image: '/sharurah-desert.webp',
-            services: ['Wadeeah Border', 'Airport Taxi', 'Desert Ride'],
+            services: ['Desert Safari', 'Airport Taxi', 'Najran Transfer'],
             popular: false,
         },
         {
@@ -301,9 +304,9 @@ export default function LocationsPage() {
         {
             name: 'Haql',
             slug: 'haql',
-            description: 'Northwest Border & Shipwreck',
+            description: 'Northwest Coast & Shipwreck Tours',
             image: '/haql-shipwreck.webp',
-            services: ['Shipwreck Tour', 'Jordan Border', 'Tabuk Taxi'],
+            services: ['Shipwreck Tour', 'Beach Transfer', 'Tabuk Taxi'],
             popular: false,
         },
         {
@@ -373,25 +376,25 @@ export default function LocationsPage() {
         {
             name: 'Al Haditha',
             slug: 'al-haditha',
-            description: 'Jordan Border (Al Omari)',
+            description: 'Northwest Gateway & Regional Hub',
             image: '/al-haditha-border.webp',
-            services: ['Border Taxi', 'Qurayyat Transfer', 'Tabuk Ride'],
+            services: ['City Transfer', 'Qurayyat Transfer', 'Tabuk Ride'],
             popular: false,
         },
         {
             name: 'Halat Ammar',
             slug: 'halat-mmar',
-            description: 'Pilgrim Border Crossing',
+            description: 'Northwest Regional Hub & Transfer',
             image: '/halat-ammar-border.webp',
-            services: ['Pilgrim Taxi', 'Border Transfer', 'Tabuk Airport'],
+            services: ['City Taxi', 'Tabuk Transfer', 'Airport Ride'],
             popular: false,
         },
         {
             name: 'Al Wadeeah',
             slug: 'al-wadeeah',
-            description: 'Yemen Border Crossing',
+            description: 'Southern Regional Hub & Transfer',
             image: '/wadeeah-border.webp',
-            services: ['Yemen Transfer', 'Sharurah Ride', 'Najran Taxi'],
+            services: ['Regional Transfer', 'Sharurah Ride', 'Najran Taxi'],
             popular: false,
         },
         {

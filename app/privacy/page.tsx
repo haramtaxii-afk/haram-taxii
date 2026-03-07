@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Harm Taxi Service',
     description: 'Learn how Haram Taxi Service protects your personal information. Our privacy policy explains data collection, usage, and your rights.',
     robots: 'index, follow',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/privacy',
+    },
 };
 
 export default function PrivacyPage() {

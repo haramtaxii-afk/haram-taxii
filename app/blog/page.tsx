@@ -9,6 +9,9 @@ import { ArrowRight, Calendar, User } from 'lucide-react';
 export const metadata: Metadata = {
     title: 'Haram Taxi Blog | Umrah Travel Tips & Guides',
     description: 'Read our latest guides on booking taxis in Saudi Arabia, visiting historical sites, and travel tips for Umrah pilgrims.',
+    alternates: {
+        canonical: 'https://www.haramtaxii.com/blog',
+    },
 };
 
 export default function BlogIndexPage() {
