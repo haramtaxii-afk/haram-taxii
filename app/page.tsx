@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import Script from 'next/script';
 import Image from 'next/image';
-import { Plane, MapPin, Building2, Shield, Clock, Award, CheckCircle2, Users, User, Crown, Star, ArrowRight, DollarSign, Headphones, Car, Phone, Mail, Navigation, MessageCircle } from 'lucide-react';
+import { Plane, MapPin, Building2, Shield, Clock, Award, CheckCircle2, Users, User, Crown, Star, ArrowRight, DollarSign, Headphones, Car, Phone, Mail, Navigation, MessageCircle, Briefcase } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
@@ -22,6 +22,7 @@ import DistanceTable from '@/components/DistanceTable';
 import ComparisonTable from '@/components/ComparisonTable';
 import Testimonials from '@/components/Testimonials';
 import FounderNote from '@/components/FounderNote';
+import { fleetData } from '@/lib/fleetData';
 
 
 export const metadata: Metadata = {
@@ -78,43 +79,17 @@ export default async function Home() {
     },
     {
       title: "VIP & Luxury Transport",
-      description: "Exclusive VIP transport for Ziyarat tours and business. Luxury transport with GMC Yukon & Staria for premium travel experiences.",
+      description: "Exclusive VIP transport featuring Mercedes S-Class, Cadillac Escalade, and BMW 7 Series. Experience elite comfort with professional chauffeurs for VIPs and families.",
       icon: Crown,
-      link: "/fleet/gmc-yukon",
+      link: "/fleet",
       image: "/private-vip-taxi-driver.webp",
       imageAlt: "Private VIP taxi driver service in Saudi Arabia"
     }
   ];
 
-  const fleet = [
-    {
-      name: "GMC Yukon XL / Chevrolet Suburban",
-      image: "/gmc-yukon-xl-taxi.webp",
-      passengers: 7,
-      luggage: 5,
-      features: ["VIP Luxury", "Soundproof", "Privacy Glass", "2023/24 Models"],
-      link: "/fleet/gmc-yukon",
-      imageAlt: "GMC Yukon XL luxury taxi interior and exterior for VIPs"
-    },
-    {
-      name: "Toyota Camry / Ford Taurus",
-      image: "/toyota-camry-taxi-sedan.webp",
-      passengers: 4,
-      luggage: 2,
-      features: ["Economic", "Comfortable", "City Travel", "New Model"],
-      link: "/fleet/toyota-camry",
-      imageAlt: "Toyota Camry economic taxi sedan for city travel in Jeddah"
-    },
-    {
-      name: "Hyundai Staria / H1",
-      image: "/hyundai-staria-family-taxi.webp",
-      passengers: 7,
-      luggage: 5,
-      features: ["Family Van", "Spacious", "Dual AC", "Best for Groups"],
-      link: "/fleet/hyundai-staria",
-      imageAlt: "Hyundai Staria family van taxi for Umrah groups"
-    }
-  ];
+  const homeFleet = fleetData.filter(v =>
+    ['mercedes-s-class', 'cadillac-escalade', 'gmc-yukon-xl', 'bmw-7-series', 'genesis-g90'].includes(v.slug)
+  ).slice(0, 3);
 
   const features = [
     {
@@ -465,22 +440,22 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {fleet.map((vehicle, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="relative h-64">
+            {homeFleet.map((vehicle, index) => (
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <div className="relative h-64 overflow-hidden">
                   <Image
                     src={vehicle.image}
-                    alt={vehicle.imageAlt}
+                    alt={vehicle.name}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4 bg-brand-teal text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                    Best Value
+                    {vehicle.category}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{vehicle.name}</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-teal transition-colors">{vehicle.name}</h3>
 
                   <div className="flex justify-between mb-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
@@ -488,13 +463,13 @@ export default async function Home() {
                       <span>{vehicle.passengers} Passengers</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Car className="w-4 h-4 text-brand-teal" />
+                      <Briefcase className="w-4 h-4 text-brand-teal" />
                       <span>{vehicle.luggage} Bags</span>
                     </div>
                   </div>
 
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {vehicle.features.map((feature, idx) => (
+                    {vehicle.features.slice(0, 3).map((feature, idx) => (
                       <span key={idx} className="text-xs px-3 py-1 bg-brand-teal-pale/50 text-brand-teal-dark rounded-full">
                         {feature}
                       </span>
@@ -502,8 +477,8 @@ export default async function Home() {
                   </div>
 
                   <Button asChild className="w-full bg-brand-teal hover:bg-brand-teal-dark text-white h-12 text-lg">
-                    <Link href={vehicle.link}>
-                      Book This Vehicle
+                    <Link href={`/fleet/${vehicle.slug}`}>
+                      View Details
                     </Link>
                   </Button>
                 </div>

@@ -25,14 +25,12 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/locations/abqaiq</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-ahsa</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-baha</loc></url>
-<url><loc>https://haramtaxiservice.com/locations/al-haditha</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-hofuf</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-jouf</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-namas</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-qunfudhah</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-rass</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-ula</loc></url>
-<url><loc>https://haramtaxiservice.com/locations/al-wadeeah</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/al-wajh</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/arar</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/batha</loc></url>
@@ -44,7 +42,6 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/locations/duba</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/hafr-al-batin</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/hail</loc></url>
-<url><loc>https://haramtaxiservice.com/locations/halat-mmar</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/haql</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/jazan</loc></url>
 <url><loc>https://haramtaxiservice.com/locations/jeddah</loc></url>
@@ -85,9 +82,7 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/routes/madinah-hotel-to-madinah-airport</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/dammam-to-makkah</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/riyadh-to-makkah</loc></url>
-<url><loc>https://haramtaxiservice.com/routes/tabuk-to-jordan-border</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/alula-to-madinah</loc></url>
-<url><loc>https://haramtaxiservice.com/routes/najran-to-yemen-border</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/hafr-to-kuwait-border</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/al-ahsa-to-uae</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/hail-to-riyadh</loc></url>
@@ -97,7 +92,6 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/routes/buraidah-to-unayzah</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/yanbu-to-madinah</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/abha-to-khamis</loc></url>
-<url><loc>https://haramtaxiservice.com/routes/arar-to-iraq-border</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/qassim-to-riyadh</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/train-station-transfers-makkah</loc></url>
 <url><loc>https://haramtaxiservice.com/routes/train-station-transfers-madinah</loc></url>
@@ -117,8 +111,7 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/services/dammam-airport-transfer</loc></url>
 <url><loc>https://haramtaxiservice.com/services/neom-bay-transfer</loc></url>
 <url><loc>https://haramtaxiservice.com/services/hegra-tour</loc></url>
-<url><loc>https://haramtaxiservice.com/services/tabuk-to-jordan-border</loc></url>
-<url><loc>https://haramtaxiservice.com/services/city-tours</loc></url>
+<url><loc>https://haramtaxiservice.com/services/bahrain-border-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/business-travel</loc></url>
 <url><loc>https://haramtaxiservice.com/services/hourly-chauffeur</loc></url>
 <url><loc>https://haramtaxiservice.com/services/tabuk-city-tour</loc></url>
@@ -215,13 +208,7 @@ const xml = `
 <url><loc>https://haramtaxiservice.com/services/kuwait-border-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/uae-border-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/qatar-border-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/jordan-border-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/jordan-exit-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/yemen-border-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/wadeeah-border-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/customs-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/visa-run-taxi</loc></url>
-<url><loc>https://haramtaxiservice.com/services/qurayyat-to-jordan-border</loc></url>
+<url><loc>https://haramtaxiservice.com/services/bahrain-border-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/desert-safari-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/desert-taxi</loc></url>
 <url><loc>https://haramtaxiservice.com/services/nafud-desert-trip</loc></url>

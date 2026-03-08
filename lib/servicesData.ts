@@ -116,37 +116,21 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
-        slug: "tabuk-to-jordan-border",
-        title: "Tabuk to Jordan Border Taxi",
-        description: "Cross the border with ease. Taxi from Tabuk to Halat Ammar.",
-        content: "Reliable transfer for travelers crossing into Jordan. We drop you right at the Saudi passport control.",
-        features: ["Border Expertise", "24/7 Service", "Help with Formalities", "Safe Driving"],
-        pricing: [
-            { title: "Transfer (Sedan)", price: "400 SAR" },
-        ],
-        faqs: []
-    },
-    {
-        slug: "city-tours",
-        title: "City Tours in Saudi Arabia",
-        description: "Explore Riyadh, Jeddah, AlUla, and more with our private city tour services.",
-        content: "Discover the rich culture and modern marvels of KSA. Customized city tours available in all major cities.",
-        features: ["Custom Itinerary", "Local Guide Driver", "Multiple Cities", "Hourly Rates"],
-        pricing: [
-            { title: "4 Hours (Sedan)", price: "300 SAR" },
-            { title: "8 Hours (Sedan)", price: "500 SAR" },
-        ],
+        slug: "luxury-chauffeur",
+        title: "Luxury Chauffeur Service | VIP Mercedes & BMW",
+        description: "Premium chauffeur service featuring Mercedes S-Class, BMW 7 Series, and Cadillac Escalade for absolute elite comfort.",
+        content: "Our elite chauffeur service provides the finest vehicles in the Kingdom. Choose from the legendary Mercedes S-Class, the majestic Cadillac Escalade, or the sleek BMW 7 Series. All services include professional, multilingual chauffeurs dedicated to your privacy and punctuality.",
+        features: ["Mercedes S-Class & BMW 7 Series", "Cadillac Escalade & GMC Yukon", "VIP Protocol Service", "Professional Chauffeurs"],
+        pricing: [{ title: "Daily Rate", price: "Starting 2000 SAR" }],
         faqs: []
     },
     {
         slug: "business-travel",
-        title: "Corporate & Business Taxi Services",
-        description: "Executive transport solutions for business meetings and events.",
-        content: "Reliable transport for corporate clients. Establish a corporate account for seamless billing and priority booking.",
-        features: ["Priority Booking", "Monthly Invoicing", "Executive Cars", "NDAs Available"],
-        pricing: [
-            { title: "Daily Rate", price: "Contact Us" },
-        ],
+        title: "Corporate & Business VIP Transport",
+        description: "Executive transport solutions for business meetings and events featuring our premium VIP fleet.",
+        content: "Impress your clients and ensure your executives travel in style. Our business fleet includes the Genesis G90, Mercedes Vito (VIP Edition), and Ford Taurus (Luxury Edition). Reliable, discreet, and always on time for your high-stakes meetings.",
+        features: ["Genesis G90 & Mercedes Vito", "Priority Corporate Booking", "Monthly Invoicing", "Professional Attire Drivers"],
+        pricing: [{ title: "Daily Rate", price: "Contact Us" }],
         faqs: []
     },
     {
@@ -421,12 +405,12 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
-        slug: "luxury-chauffeur",
-        title: "Luxury Chauffeur Service",
-        description: "High-end chauffeur service in KSA.",
-        content: "S Class, BMW 7 Series, and Yukon XL.",
-        features: ["VIP", "Protocol"],
-        pricing: [{ title: "Daily", price: "2000 SAR" }],
+        slug: "luxury-chauffeur-elite",
+        title: "Elite VIP Chauffeur Service",
+        description: "Absolute luxury with Mercedes S-Class, BMW 7 Series, and Cadillac Escalade. Experience the pinnacle of Saudi VIP transport.",
+        content: "For royalty-standard travel, our Elite VIP service offers the 2024 Mercedes S-Class, BMW 7 Series, and the iconic Cadillac Escalade. Perfect for state visits, high-level corporate events, and premium Ziyarat tours.",
+        features: ["S-Class & BMW 7 Series", "Escalade & GMC Denali", "VVIP Protocol", "Multilingual Chauffeurs"],
+        pricing: [{ title: "Full Day (8h)", price: "2500 SAR" }],
         faqs: []
     },
     {
@@ -994,29 +978,38 @@ export const servicesData: ServiceData[] = [
     // ===== Border Services =====
     {
         slug: "kuwait-border-taxi",
-        title: "Kuwait Border Taxi",
-        description: "Transfer to Saudi-Kuwait border crossings.",
-        content: "Reliable taxi to Al Raqi and Al Khafji border crossings. Serving travelers heading to Kuwait.",
-        features: ["Border Experience", "Document Help", "24/7", "Return Trips"],
-        pricing: [{ title: "From Hafr Al Batin", price: "300 SAR" }, { title: "From Dammam", price: "500 SAR" }],
+        title: "Saudi to Kuwait Border Taxi | Nuwaiseeb & Khafji",
+        description: "Professional taxi transfer to Saudi-Kuwait border crossings at Al Nuwaiseeb and Al Khafji.",
+        content: "Reliable and safe transport to the Kuwait border. We serve both Al Nuwaiseeb and Al Khafji crossings from Dammam, Jubail, and Hafr Al Batin. Our drivers are well-versed in border procedures.",
+        features: ["Al Nuwaiseeb & Al Khafji", "Document Assistance", "24/7 Operations", "Return Trips Available"],
+        pricing: [{ title: "From Dammam", price: "500 SAR" }, { title: "From Hafr Al Batin", price: "300 SAR" }],
         faqs: []
     },
     {
         slug: "uae-border-taxi",
-        title: "UAE Border Taxi",
-        description: "Transfer to Saudi-UAE border at Al Batha.",
-        content: "Transport to the Al Batha border crossing to UAE. Serving travelers from Al Ahsa, Hofuf, and Eastern Province.",
-        features: ["Batha Border", "Document Assist", "AC", "Reliable"],
+        title: "Saudi to UAE Border Taxi | Al Batha Crossing",
+        description: "Direct private taxi transfer to the Al Batha border crossing between Saudi Arabia and UAE.",
+        content: "Seamless transport to the UAE border at Al Batha. Ideal for travelers from the Eastern Province heading to Abu Dhabi or Dubai. We provide comfortable SUVs like GMC Yukon for this long journey.",
+        features: ["Al Batha Border", "UAE/Dubai Transit", "Long Distance SUVs", "Safety Focused"],
         pricing: [{ title: "From Al Ahsa", price: "600 SAR" }, { title: "From Dammam", price: "800 SAR" }],
         faqs: []
     },
     {
         slug: "qatar-border-taxi",
-        title: "Qatar Border (Salwa) Taxi",
-        description: "Transfer to Salwa border crossing to Qatar.",
-        content: "Quick transfer to the Salwa border for travelers heading to Doha. From Al Ahsa, Khobar, or Dammam.",
-        features: ["Salwa Border", "Fast Route", "Return Available", "AC"],
+        title: "Saudi to Qatar Border Taxi | Salwa Border Crossing",
+        description: "Reliable taxi transfer to the Salwa border crossing between Saudi Arabia and Qatar.",
+        content: "Quick and efficient transfer to the Salwa border for travelers heading to Doha. Service available from Al Ahsa, Khobar, and Dammam with experienced cross-border drivers.",
+        features: ["Salwa Border Crossing", "Qatar/Doha Access", "Prompt Pickup", "Fixed Pricing"],
         pricing: [{ title: "From Al Ahsa", price: "400 SAR" }, { title: "From Khobar", price: "500 SAR" }],
+        faqs: []
+    },
+    {
+        slug: "bahrain-border-taxi",
+        title: "Saudi to Bahrain Taxi | King Fahd Causeway",
+        description: "Direct taxi transfer across the King Fahd Causeway to Bahrain from Khobar and Dammam.",
+        content: "Cross the bridge to Bahrain comfortably in our private vehicles. We provide door-to-door service from Al Khobar and Dammam directly to your destination in Manama or beyond.",
+        features: ["King Fahd Causeway", "Door-to-Door Service", "Causeway Fees Info", "VIP Cars Available"],
+        pricing: [{ title: "From Khobar", price: "350 SAR" }, { title: "From Dammam", price: "400 SAR" }],
         faqs: []
     },
 

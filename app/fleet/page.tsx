@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Users, Briefcase, CheckCircle2, ArrowRight, Car } from 'lucide-react';
+import { Users, Briefcase, CheckCircle2, ArrowRight, Car, Crown, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 import { fleetData } from '@/lib/fleetData';
@@ -79,66 +79,142 @@ export default function FleetPage() {
             {/* Fleet Grid */}
             <section className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {fleetData.map((vehicle, index) => (
-                            <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                                {/* Image */}
-                                <div className="relative h-64 overflow-hidden">
-                                    <Image
-                                        src={vehicle.image}
-                                        alt={vehicle.name}
-                                        fill
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                    <div className="absolute top-4 left-4">
-                                        <span className="px-3 py-1 bg-teal-500 text-white text-xs font-semibold rounded-full">
-                                            {vehicle.category}
-                                        </span>
-                                    </div>
-                                </div>
-
-                                {/* Content */}
-                                <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-teal-500 transition-colors">
-                                        {vehicle.name}
-                                    </h3>
-
-                                    <p className="text-gray-600 text-sm mb-4">
-                                        {vehicle.description}
-                                    </p>
-
-                                    {/* Capacity */}
-                                    <div className="flex items-center gap-6 mb-4 pb-4 border-b border-gray-100">
-                                        <div className="flex items-center gap-2 text-gray-700">
-                                            <Users className="w-5 h-5 text-teal-500" />
-                                            <span className="text-sm font-medium">{vehicle.passengers} Seats</span>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-gray-700">
-                                            <Briefcase className="w-5 h-5 text-teal-500" />
-                                            <span className="text-sm font-medium">{vehicle.luggage} Bags</span>
+                    {/* VIP Fleet Section */}
+                    <div className="mb-20">
+                        <div className="flex items-center gap-4 mb-10">
+                            <Crown className="w-8 h-8 text-teal-500" />
+                            <h2 className="text-3xl font-bold text-gray-900">VIP & Elite Fleet</h2>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {fleetData.filter(v => ['Mercedes S-Class', 'Cadillac Escalade', 'BMW 7 Series', 'Genesis G90', 'GMC Yukon XL (Denali)', 'Mercedes Vito (VIP Edition)', 'Mercedes Sprinter (VIP Executive)', 'Luxurious VIP Coach Bus', 'Ford Taurus (Luxury Edition)'].includes(v.name)).map((vehicle, index) => (
+                                <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-teal-100/50">
+                                    {/* Image */}
+                                    <div className="relative h-64 overflow-hidden">
+                                        <Image
+                                            src={vehicle.image}
+                                            alt={vehicle.name}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                        <div className="absolute top-4 left-4">
+                                            <span className="px-3 py-1 bg-teal-500 text-white text-xs font-semibold rounded-full flex items-center gap-1">
+                                                <Star className="w-3 h-3 fill-current" /> VIP Elite
+                                            </span>
                                         </div>
                                     </div>
 
-                                    {/* Features */}
-                                    <div className="space-y-2 mb-6">
-                                        {vehicle.features.slice(0, 3).map((feature, idx) => (
-                                            <div key={idx} className="flex items-center gap-2">
-                                                <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
-                                                <span className="text-sm text-gray-600">{feature}</span>
+                                    {/* Content */}
+                                    <div className="p-6">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-teal-500 transition-colors">
+                                            {vehicle.name}
+                                        </h3>
+
+                                        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                                            {vehicle.description}
+                                        </p>
+
+                                        {/* Capacity */}
+                                        <div className="flex items-center gap-6 mb-4 pb-4 border-b border-gray-100">
+                                            <div className="flex items-center gap-2 text-gray-700">
+                                                <Users className="w-5 h-5 text-teal-500" />
+                                                <span className="text-sm font-medium">{vehicle.passengers} Seats</span>
                                             </div>
-                                        ))}
+                                            <div className="flex items-center gap-2 text-gray-700">
+                                                <Briefcase className="w-5 h-5 text-teal-500" />
+                                                <span className="text-sm font-medium">{vehicle.luggage} Bags</span>
+                                            </div>
+                                        </div>
+
+                                        {/* Features */}
+                                        <div className="space-y-2 mb-6">
+                                            {vehicle.features.slice(0, 3).map((feature, idx) => (
+                                                <div key={idx} className="flex items-center gap-2">
+                                                    <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
+                                                    <span className="text-sm text-gray-600">{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {/* CTA */}
+                                        <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
+                                            <Link href={`/fleet/${vehicle.slug}`}>
+                                                View {vehicle.name} Details
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Standard Fleet Section */}
+                    <div>
+                        <div className="flex items-center gap-4 mb-10">
+                            <Car className="w-8 h-8 text-gray-400" />
+                            <h2 className="text-3xl font-bold text-gray-900">Standard & Group Fleet</h2>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {fleetData.filter(v => !['Mercedes S-Class', 'Cadillac Escalade', 'BMW 7 Series', 'Genesis G90', 'GMC Yukon XL (Denali)', 'Mercedes Vito (VIP Edition)', 'Mercedes Sprinter (VIP Executive)', 'Luxurious VIP Coach Bus', 'Ford Taurus (Luxury Edition)'].includes(v.name)).map((vehicle, index) => (
+                                <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                    {/* Image */}
+                                    <div className="relative h-64 overflow-hidden">
+                                        <Image
+                                            src={vehicle.image}
+                                            alt={vehicle.name}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                        <div className="absolute top-4 left-4">
+                                            <span className="px-3 py-1 bg-gray-500 text-white text-xs font-semibold rounded-full">
+                                                {vehicle.category}
+                                            </span>
+                                        </div>
                                     </div>
 
-                                    {/* CTA */}
-                                    <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
-                                        <Link href={`/fleet/${vehicle.slug}`}>
-                                            View {vehicle.name} Details
-                                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                        </Link>
-                                    </Button>
+                                    {/* Content */}
+                                    <div className="p-6">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-teal-500 transition-colors">
+                                            {vehicle.name}
+                                        </h3>
+
+                                        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                                            {vehicle.description}
+                                        </p>
+
+                                        {/* Capacity */}
+                                        <div className="flex items-center gap-6 mb-4 pb-4 border-b border-gray-100">
+                                            <div className="flex items-center gap-2 text-gray-700">
+                                                <Users className="w-5 h-5 text-teal-500" />
+                                                <span className="text-sm font-medium">{vehicle.passengers} Seats</span>
+                                            </div>
+                                            <div className="flex items-center gap-2 text-gray-700">
+                                                <Briefcase className="w-5 h-5 text-teal-500" />
+                                                <span className="text-sm font-medium">{vehicle.luggage} Bags</span>
+                                            </div>
+                                        </div>
+
+                                        {/* Features */}
+                                        <div className="space-y-2 mb-6">
+                                            {vehicle.features.slice(0, 3).map((feature, idx) => (
+                                                <div key={idx} className="flex items-center gap-2">
+                                                    <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
+                                                    <span className="text-sm text-gray-600">{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {/* CTA */}
+                                        <Button asChild className="w-full bg-white border border-gray-200 text-gray-900 hover:bg-gray-50 group-hover:border-teal-500 transition-all">
+                                            <Link href={`/fleet/${vehicle.slug}`}>
+                                                View {vehicle.name} Details
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

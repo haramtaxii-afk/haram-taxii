@@ -188,27 +188,44 @@ export const routesData: RouteData[] = [
 
     {
         slug: "hafr-to-kuwait-border",
-        title: "Hafr Al Batin to Kuwait Border Taxi",
-        description: "Taxi from Hafr Al Batin to Al Raqi (Kuwait border).",
-        h1: "Hafr Al Batin to Kuwait Border Transfer",
-        distance: "100 km",
+        title: "Hafr Al Batin to Kuwait Border Taxi | Nuwaiseeb & Khafji",
+        description: "Reliable taxi transfer from Hafr Al Batin to Saudi-Kuwait border crossings at Al Nuwaiseeb and Al Khafji.",
+        h1: "Hafr Al Batin to Kuwait Border (Nuwaiseeb/Khafji) Transfer",
+        distance: "90 km",
         duration: "1 hour",
-        content: "Short and convenient ride to the Kuwait border crossing.",
+        content: "Quick and convenient ride to the Kuwait border. We serve both Al Nuwaiseeb and Al Khafji crossings, providing seamless transport for travelers heading to Kuwait City.",
         pricing: [
             { vehicle: "Toyota Camry", price: "300 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "450 SR", capacity: "7 Pax", luggage: "6 Bags" },
         ],
         faqs: []
     },
     {
-        slug: "al-ahsa-to-uae",
-        title: "Al Ahsa to UAE Border (Batha) Taxi",
-        description: "Taxi from Al Ahsa / Hofuf to Al Batha border (UAE).",
-        h1: "Al Ahsa to UAE Border Transfer",
-        distance: "300 km",
+        slug: "khobar-to-bahrain-causeway",
+        title: "Saudi to Bahrain Taxi | King Fahd Causeway Transfer",
+        description: "Direct taxi from Khobar or Dammam to Bahrain via King Fahd Causeway. Door-to-door service.",
+        h1: "King Fahd Causeway Taxi to Bahrain",
+        distance: "50 km",
+        duration: "45 minutes",
+        content: "Travel from the Eastern Province to Bahrain with ease. Our service includes the King Fahd Causeway crossing, dropping you directly at your hotel or office in Manama.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "350 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "500 SR", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Mercedes S-Class", price: "800 SR", capacity: "3 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "al-ahsa-to-uae-border",
+        title: "Al Ahsa to UAE Border (Al Batha) Taxi",
+        description: "Private taxi from Al Ahsa / Hofuf to the Al Batha border crossing (Saudi-UAE).",
+        h1: "Al Ahsa to UAE Border (Al Batha) Transfer",
+        distance: "280 km",
         duration: "3 hours",
-        content: "Transfer service to the UAE border at Batha.",
+        content: "Direct and comfortable transfer to the UAE border at Al Batha. Ideal for those heading to Abu Dhabi or Dubai by road.",
         pricing: [
             { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "800 SR", capacity: "7 Pax", luggage: "6 Bags" },
         ],
         faqs: []
     },
@@ -253,15 +270,16 @@ export const routesData: RouteData[] = [
         faqs: []
     },
     {
-        slug: "al-ahsa-to-qatar",
+        slug: "al-ahsa-to-qatar-border",
         title: "Al Ahsa to Qatar Border (Salwa) Taxi",
-        description: "Taxi from Al Ahsa to Salwa border (Qatar).",
-        h1: "Al Ahsa to Qatar Border Transfer",
+        description: "Taxi from Al Ahsa to Salwa border crossing (Saudi-Qatar). Quick and reliable.",
+        h1: "Al Ahsa to Qatar Border (Salwa) Transfer",
         distance: "150 km",
         duration: "1.5 hours",
-        content: "Quick transfer to the Qatar border.",
+        content: "Direct taxi service to the Qatar border at Salwa. We provide prompt pickups from Al Ahsa hotels and the train station.",
         pricing: [
             { vehicle: "Toyota Camry", price: "400 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "550 SR", capacity: "7 Pax", luggage: "5 Bags" },
         ],
         faqs: []
     },
